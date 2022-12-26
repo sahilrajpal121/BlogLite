@@ -9,8 +9,9 @@ def wrong_email_input(email):
         flash(e)
         return True
     
-def valid_username(username):
+def invalid_username(username):
     username_valid = re.match('^[a-zA-Z_\d\.]+$', username)
-    if username_valid is not None:
+    
+    if username_valid is None:
         return True
     return False
