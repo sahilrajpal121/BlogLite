@@ -15,8 +15,8 @@ def index():
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
-        username = request.form.get('username')
-        email = request.form.get('email')
+        username = request.form.get('username').lower()
+        email = request.form.get('email').lower()
         password = request.form.get('password')
         password_confirm = request.form.get('password_confirm')
         
@@ -45,7 +45,7 @@ def register():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        username_or_email = request.form.get('username_or_email')
+        username_or_email = request.form.get('username_or_email').lower()
         password = request.form.get('password')
         user = User.query.filter(
             (User.username==username_or_email) |\
@@ -57,9 +57,9 @@ def login():
                 flash('logged in successful', category='success')
                 return redirect(url_for('index'))
             else:
-                flash('Wrong password', category='error')
+                flash('Wrong password', category='warning')
         else:
-            flash("Username or email doesn't exist", category='error')
+            flash("Username or email doesn't exist", category='warning')
 
     return render_template('login.html')
         
