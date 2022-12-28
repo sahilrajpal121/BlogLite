@@ -3,7 +3,7 @@ from application.config import LocalDevelopmentConfig
 from application.database import db
 from flask_login import LoginManager
 import os
-
+from flask_migrate import Migrate
 
 app = None
 
@@ -17,11 +17,15 @@ def create_app():
       print("Staring Local Development")
       app.config.from_object(LocalDevelopmentConfig)
     db.init_app(app)
+    migrate = Migrate(app, db)
     
     login_manager = LoginManager()
     login_manager.init_app(app)
     login_manager.login_view = 'login'
+    login_manager.login_message_category = 'info'
+    login_manager.login_message = 'Please login first'
     
+    from application.models import User 
     @login_manager.user_loader
     def load_user(id):
         return User.query.get(int(id))
