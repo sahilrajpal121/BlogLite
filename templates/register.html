@@ -1,16 +1,28 @@
 {% extends "base.html" %}
 {% block title %} Register {% endblock %}
 {% block content %}
-    <h1>Register</h1>
-    <form action="register" method="post">
-        <label for="username">Username</label>
-        <input type="text" name="username" id="username" />
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email" />
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" />
-        <label for="password">Confirm password</label>
-        <input type="password" name="password_confirm" id="password_confirm" />
-        <input type="submit" value="Register" />
+<div class="shadow p-3 mt-5 bg-body text-center rounded w-25 offset-4">
+    <form action="register" method="post" style="text-align:center">
+        {{form.hidden_tag()}}
+        <div class="form-outline form-white mt-3">
+        {{form.username(class="form-control", placeholder='username')}}
+        </div>
+        
+        <div class="form-outline form-white mt-3">
+        {{form.email(class="form-control", placeholder='email')}}
+        </div>
+
+        <div class="form-outline form-white mt-3">
+        {{form.password(class="form-control", placeholder='password')}}
+        </div>
+
+        <div class="form-outline form-white mt-3">
+        {{form.confirm_password(class="form-control", placeholder='confirm password')}}
+        </div>
+
+        <div class="form-outline form-white mt-3">
+        {{ form.submit(class="btn btn-primary mt-3 btn-block") }}
+        </div>
     </form>
+</div>
 {% endblock %}

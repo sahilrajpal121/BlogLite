@@ -1,15 +1,24 @@
 {% extends "base.html" %}
 {% block title %} Login {% endblock %}
 {% block content %}
-<form method="post" action="login">
-    <label>
-        <input type="text" id="username_or_email" name="username_or_email" placeholder="Username or Email" />
-    </label>
-    <label>
-        <input type="password" id="password" name="password" placeholder="password" />
-    </label>
-    <input type="submit" value="login" />
 
-</form>
-
+<div class="shadow p-3 mt-5 bg-body text-center rounded w-25 offset-4">
+    <form method="post" action="login">
+        <div class="form-outline form-white mt-3">
+            <label>
+                <input type="text" id="username_or_email" name="username_or_email" class="form-control" placeholder="Username or Email" />
+            </label>
+        </div>
+        <div class="form-outline form-white mt-3">
+            <label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="password" />
+            </label>
+        </div>
+        <div class="form-outline form-white mt-3">
+        <button class="btn btn-dark text-color-white btn-block" type="submit">Login</button>
+        </div>
+        <p class="h5 text-secondary color-light mt-3">New here?</p>
+        <a class="btn btn-primary btn-block" href="{{url_for('register')}}" role="button">Sign Up</a>
+    </form>
+</div>
 {% endblock %}
