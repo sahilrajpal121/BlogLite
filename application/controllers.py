@@ -8,16 +8,20 @@ from .helpers import wrong_email_input, invalid_username
 from .database import db
 from .forms import RegisterForm, LoginForm
 
+
 @app.route('/')
+@login_required
 def index():
     return render_template('index.html')
 
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
+    if current_user.is_authenticated:
+        flash('You are already logged in! Please log out to register', 'info')
+        return redirect(url_for('login'))
     form = RegisterForm()
-    if request.method == 'POST':
-
+    if form.validate_on_submit():
         username = form.username.data.lower()
         email = form.email.data.lower()
         password = form.password.data
