@@ -4,21 +4,20 @@
 
 <div class="shadow p-3 mt-5 bg-body text-center rounded w-25 offset-4">
     <form method="post" action="login">
+        {{form.hidden_tag()}}
         <div class="form-outline form-white mt-3">
-            <label>
-                <input type="text" id="username_or_email" name="username_or_email" class="form-control" placeholder="Username or Email" />
-            </label>
+        {{form.username_or_email(class="form-control", placeholder='username or email')}}
         </div>
+
         <div class="form-outline form-white mt-3">
-            <label>
-                <input type="password" id="password" name="password" class="form-control" placeholder="password" />
-            </label>
+        {{form.password(class="form-control", placeholder='password')}}
         </div>
+
         <div class="form-outline form-white mt-3">
-        <button class="btn btn-dark text-color-white btn-block" type="submit">Login</button>
+        {{ form.submit(class="btn btn-dark mt-3 btn-block") }}
         </div>
         <p class="h5 text-secondary color-light mt-3">New here?</p>
-        <a class="btn btn-primary btn-block" href="{{url_for('register')}}" role="button">Sign Up</a>
+        <a class="btn btn-primary btn-block mt-2" href="{{url_for('register')}}" role="button">Sign Up</a>
     </form>
 </div>
 {% endblock %}
