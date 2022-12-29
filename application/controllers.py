@@ -6,12 +6,15 @@ from application.models import User, Post, Comment, Like, Follower
 from email_validator import validate_email
 from .helpers import wrong_email_input, invalid_username
 from .database import db
-from .forms import RegisterForm, LoginForm
+from .forms import RegisterForm, LoginForm, PostForm, CommentForm
+import logging
 
 
 @app.route('/')
 @login_required
 def index():
+    # app.logger.debug('Index page accessed')
+    print('index page accessed')
     return render_template('index.html')
 
 
@@ -54,7 +57,10 @@ def register():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    app.logger.info('Login page accessed')
+    app.logger.debug('login page debug')
     if current_user.is_authenticated:
+        flash('You are already logged in!', 'info')
         return redirect(url_for('index'))
     form = LoginForm()
      
@@ -82,3 +88,34 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for('login'))
+
+@app.route('/create_blog', methods=['GET', 'POST'])
+@login_required
+def create_blog():
+    print('Create blog page accessed')
+
+    form = PostForm()
+    if form.validate_on_submit():
+        title = form.title.data
+        content = form.content.data
+        image = form.image.data
+        print(image.filename)
+        new_post = Post(title=title, content=content, author_id=current_user.id, image=image.filename)
+        db.session.add(new_post)
+        db.session.commit()
+        flash('Blog created', category='success')
+        return redirect(url_for('index'))
+
+    return render_template('create_blog.html', form=form)
+
+
+@app.route("/profile/<string:username>")
+@login_required
+def profile(username):
+    user = User.query.filter_by(username=username).first()
+    if user:
+        posts = Post.query.filter_by(author_id=user.id).all()
+        followed = Follower.query.filter_by(follower_id=current_user.id, following_id=user.id).first()
+        no_followers = Follower.query.filter_by(following_id=user.id).count()
+        no_following = Follower.query.filter_by(follower_id=user.id).count()
+        return render_template('profile.html', user=user, posts=posts, no_followers=no_followers, no_following=no_following, followed=followed)
