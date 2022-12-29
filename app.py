@@ -4,7 +4,9 @@ from application.database import db
 from flask_login import LoginManager
 import os
 from flask_migrate import Migrate
+import logging
 
+logging.basicConfig(filename='debug.log', level=logging.DEBUG, format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 app = None
 
 def create_app():
@@ -13,7 +15,7 @@ def create_app():
       app.logger.info("Currently no production config is setup.")
       raise Exception("Currently no production config is setup.")
     else:
-      app.logger.info("Staring Local Development.")
+      app.logger.debug("Staring Local Development.")
       print("Staring Local Development")
       app.config.from_object(LocalDevelopmentConfig)
     db.init_app(app)
@@ -55,6 +57,4 @@ from application.controllers import *
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
-    
-    
+  app.run(host='0.0.0.0', port=5000)

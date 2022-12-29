@@ -1,0 +1,527 @@
+2022-12-29 18:23:54,226 DEBUG app MainThread : Staring Local Development.
+2022-12-29 18:23:54,238 INFO app MainThread : App setup complete
+2022-12-29 18:23:54,326 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.37:5000
+2022-12-29 18:23:54,326 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2022-12-29 18:23:54,328 INFO werkzeug MainThread :  * Restarting with stat
+2022-12-29 18:23:54,985 DEBUG app MainThread : Staring Local Development.
+2022-12-29 18:23:55,000 INFO app MainThread : App setup complete
+2022-12-29 18:23:55,118 WARNING werkzeug MainThread :  * Debugger is active!
+2022-12-29 18:23:55,123 INFO werkzeug MainThread :  * Debugger PIN: 143-390-916
+2022-12-29 18:23:57,339 INFO app Thread-2 (process_request_thread) : Login page accessed
+2022-12-29 18:23:57,340 DEBUG app Thread-2 (process_request_thread) : login page debug
+2022-12-29 18:23:57,362 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 18:23:57] "GET /login HTTP/1.1" 200 -
+2022-12-29 18:23:57,568 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 18:23:57] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 18:23:57,609 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 18:23:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 18:31:53,759 INFO werkzeug MainThread :  * Detected change in 'D:\\IITM\\Project\\BlogLite\\application\\config.py', reloading
+2022-12-29 18:31:53,995 INFO werkzeug MainThread :  * Restarting with stat
+2022-12-29 18:31:55,062 DEBUG app MainThread : Staring Local Development.
+2022-12-29 18:31:55,077 INFO app MainThread : App setup complete
+2022-12-29 18:31:55,164 WARNING werkzeug MainThread :  * Debugger is active!
+2022-12-29 18:31:55,167 INFO werkzeug MainThread :  * Debugger PIN: 143-390-916
+2022-12-29 18:31:55,254 INFO app Thread-2 (process_request_thread) : Login page accessed
+2022-12-29 18:31:55,255 DEBUG app Thread-2 (process_request_thread) : login page debug
+2022-12-29 18:31:55,267 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 18:31:55] "GET /login HTTP/1.1" 200 -
+2022-12-29 18:31:55,444 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 18:31:55] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 18:31:55,486 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 18:31:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 18:32:06,040 INFO app Thread-5 (process_request_thread) : Login page accessed
+2022-12-29 18:32:06,040 DEBUG app Thread-5 (process_request_thread) : login page debug
+2022-12-29 18:32:06,057 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 18:32:06] "POST /login HTTP/1.1" 200 -
+2022-12-29 18:32:06,122 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 18:32:06] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 18:32:06,184 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 18:32:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 18:32:09,644 INFO app Thread-8 (process_request_thread) : Login page accessed
+2022-12-29 18:32:09,644 DEBUG app Thread-8 (process_request_thread) : login page debug
+2022-12-29 18:32:09,647 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 18:32:09] "[32mPOST /login HTTP/1.1[0m" 302 -
+2022-12-29 18:32:09,676 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 18:32:09] "GET / HTTP/1.1" 200 -
+2022-12-29 18:32:09,748 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 18:32:09] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 18:32:09,818 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 18:32:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 18:32:09,937 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 18:32:09] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 19:27:07,645 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:27:07] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2022-12-29 19:27:07,724 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:27:07] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2022-12-29 19:27:07,751 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:27:07] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2022-12-29 19:27:08,087 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:27:08] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-12-29 19:27:08,714 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:27:08] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-12-29 19:27:44,013 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:27:44] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2022-12-29 19:27:44,095 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:27:44] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2022-12-29 19:27:44,108 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:27:44] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2022-12-29 19:27:44,401 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:27:44] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-12-29 19:27:44,665 INFO werkzeug Thread-23 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:27:44] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-12-29 19:29:23,738 INFO werkzeug MainThread :  * Detected change in 'D:\\IITM\\Project\\BlogLite\\application\\controllers.py', reloading
+2022-12-29 19:29:23,849 INFO werkzeug MainThread :  * Restarting with stat
+2022-12-29 19:29:26,051 DEBUG app MainThread : Staring Local Development.
+2022-12-29 19:29:26,105 INFO app MainThread : App setup complete
+2022-12-29 19:29:26,361 WARNING werkzeug MainThread :  * Debugger is active!
+2022-12-29 19:29:26,366 INFO werkzeug MainThread :  * Debugger PIN: 143-390-916
+2022-12-29 19:29:27,405 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:29:27] "GET / HTTP/1.1" 200 -
+2022-12-29 19:29:27,608 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:29:27] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 19:29:27,664 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:29:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 19:29:27,724 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:29:27] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 19:29:38,253 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:29:38] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2022-12-29 19:29:38,320 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:29:38] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2022-12-29 19:29:38,358 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:29:38] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2022-12-29 19:29:38,554 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:29:38] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-12-29 19:29:38,818 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:29:38] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-12-29 19:31:05,957 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:31:05] "GET / HTTP/1.1" 200 -
+2022-12-29 19:31:06,055 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:31:06] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 19:31:06,152 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:31:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 19:31:06,297 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:31:06] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 19:31:11,021 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:31:11] "[35m[1mGET /profile/test HTTP/1.1[0m" 500 -
+2022-12-29 19:31:11,102 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:31:11] "GET /profile/test?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2022-12-29 19:31:11,153 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:31:11] "GET /profile/test?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2022-12-29 19:31:11,316 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:31:11] "GET /profile/test?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2022-12-29 19:31:11,563 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:31:11] "[36mGET /profile/test?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-12-29 19:32:19,714 INFO werkzeug MainThread :  * Detected change in 'D:\\IITM\\Project\\BlogLite\\application\\controllers.py', reloading
+2022-12-29 19:32:19,799 INFO werkzeug MainThread :  * Restarting with stat
+2022-12-29 19:32:20,545 DEBUG app MainThread : Staring Local Development.
+2022-12-29 19:32:20,561 INFO app MainThread : App setup complete
+2022-12-29 19:32:20,658 WARNING werkzeug MainThread :  * Debugger is active!
+2022-12-29 19:32:20,661 INFO werkzeug MainThread :  * Debugger PIN: 143-390-916
+2022-12-29 19:32:33,707 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:32:33] "[35m[1mGET /profile/test HTTP/1.1[0m" 500 -
+2022-12-29 19:32:33,886 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:32:33] "[36mGET /profile/test?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2022-12-29 19:32:33,904 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:32:33] "[36mGET /profile/test?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2022-12-29 19:32:34,053 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:32:34] "[36mGET /profile/test?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-12-29 19:32:34,319 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:32:34] "[36mGET /profile/test?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2022-12-29 19:33:17,200 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:33:17] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 19:33:17,300 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:33:17] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 19:33:17,360 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:33:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 19:33:17,473 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:33:17] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 19:33:37,459 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:33:37] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 19:33:37,526 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:33:37] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 19:33:37,618 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:33:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 19:33:37,748 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:33:37] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 19:34:41,541 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:34:41] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 19:34:41,605 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:34:41] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 19:34:41,710 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:34:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 19:34:41,829 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:34:41] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 19:34:53,778 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:34:53] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 19:34:53,839 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:34:53] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 19:34:53,938 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:34:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 19:34:54,011 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:34:54] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 19:34:56,040 INFO werkzeug Thread-23 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:34:56] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 19:34:56,095 INFO werkzeug Thread-24 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:34:56] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 19:34:56,193 INFO werkzeug Thread-25 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:34:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 19:34:56,297 INFO werkzeug Thread-26 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:34:56] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 19:38:56,670 INFO werkzeug Thread-27 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:38:56] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 19:38:56,742 INFO werkzeug Thread-28 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:38:56] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 19:38:56,857 INFO werkzeug Thread-29 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:38:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 19:38:57,001 INFO werkzeug Thread-30 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:38:57] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 19:39:03,493 INFO werkzeug Thread-31 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:39:03] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 19:39:03,549 INFO werkzeug Thread-32 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:39:03] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 19:39:03,623 INFO werkzeug Thread-33 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:39:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 19:39:03,718 INFO werkzeug Thread-34 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:39:03] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 19:39:06,601 INFO werkzeug Thread-35 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:39:06] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 19:39:06,664 INFO werkzeug Thread-36 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:39:06] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 19:39:06,733 INFO werkzeug Thread-37 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:39:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 19:39:06,810 INFO werkzeug Thread-38 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:39:06] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 19:50:09,432 INFO werkzeug Thread-39 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:09] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 19:50:09,502 INFO werkzeug Thread-40 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:09] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 19:50:09,587 INFO werkzeug Thread-41 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 19:50:09,816 INFO werkzeug Thread-42 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:09] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 19:50:15,545 INFO werkzeug Thread-43 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:15] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 19:50:15,624 INFO werkzeug Thread-44 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:15] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 19:50:15,667 INFO werkzeug Thread-45 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 19:50:15,729 INFO werkzeug Thread-46 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:15] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 19:50:21,625 INFO werkzeug Thread-47 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:21] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 19:50:21,691 INFO werkzeug Thread-48 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:21] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 19:50:21,759 INFO werkzeug Thread-49 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 19:50:21,870 INFO werkzeug Thread-50 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:21] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 19:50:27,576 INFO werkzeug Thread-51 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:27] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 19:50:27,639 INFO werkzeug Thread-52 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:27] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 19:50:27,707 INFO werkzeug Thread-53 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 19:50:27,800 INFO werkzeug Thread-54 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:27] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 19:50:32,209 INFO werkzeug Thread-55 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:32] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 19:50:32,270 INFO werkzeug Thread-56 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:32] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 19:50:32,344 INFO werkzeug Thread-57 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 19:50:32,465 INFO werkzeug Thread-58 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:32] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 19:50:36,555 INFO werkzeug Thread-59 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:36] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 19:50:36,613 INFO werkzeug Thread-60 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:36] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 19:50:36,688 INFO werkzeug Thread-61 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 19:50:36,776 INFO werkzeug Thread-62 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 19:50:36] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 20:19:35,067 INFO werkzeug Thread-63 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:19:35] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 20:19:35,137 INFO werkzeug Thread-64 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:19:35] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 20:19:35,243 INFO werkzeug Thread-65 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:19:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 20:19:35,469 INFO werkzeug Thread-66 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:19:35] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 20:36:24,087 INFO werkzeug Thread-67 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:36:24] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 20:36:24,157 INFO werkzeug Thread-68 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:36:24] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 20:36:24,300 INFO werkzeug Thread-69 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:36:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 20:36:24,492 INFO werkzeug Thread-70 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:36:24] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 20:36:34,630 INFO werkzeug Thread-71 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:36:34] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 20:36:34,715 INFO werkzeug Thread-72 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:36:34] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 20:36:34,838 INFO werkzeug Thread-73 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:36:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 20:36:34,951 INFO werkzeug Thread-74 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:36:34] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 20:36:43,282 INFO werkzeug Thread-75 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:36:43] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 20:36:43,346 INFO werkzeug Thread-76 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:36:43] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 20:36:43,449 INFO werkzeug Thread-77 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:36:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 20:36:43,574 INFO werkzeug Thread-78 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:36:43] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 20:37:04,786 INFO werkzeug Thread-79 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:37:04] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 20:37:04,866 INFO werkzeug Thread-80 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:37:04] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 20:37:04,985 INFO werkzeug Thread-81 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:37:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 20:37:05,113 INFO werkzeug Thread-82 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:37:05] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 20:37:15,830 INFO werkzeug Thread-83 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:37:15] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 20:37:15,916 INFO werkzeug Thread-84 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:37:15] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 20:37:16,040 INFO werkzeug Thread-85 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:37:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 20:37:16,171 INFO werkzeug Thread-86 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:37:16] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 20:37:35,121 INFO werkzeug Thread-87 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:37:35] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 20:38:43,532 INFO werkzeug Thread-89 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:38:43] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 20:38:43,609 INFO werkzeug Thread-90 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:38:43] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 20:38:43,738 INFO werkzeug Thread-91 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:38:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 20:38:43,871 INFO werkzeug Thread-92 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:38:43] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 20:39:09,439 INFO werkzeug Thread-93 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:39:09] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 20:39:09,508 INFO werkzeug Thread-94 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:39:09] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 20:39:09,632 INFO werkzeug Thread-95 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:39:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 20:39:09,737 INFO werkzeug Thread-96 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:39:09] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 20:39:56,447 INFO werkzeug Thread-97 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:39:56] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 20:39:56,526 INFO werkzeug Thread-98 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:39:56] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 20:39:56,696 INFO werkzeug Thread-99 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:39:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 20:39:56,754 INFO werkzeug Thread-100 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:39:56] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 20:40:03,068 INFO werkzeug Thread-101 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:40:03] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 20:40:03,160 INFO werkzeug Thread-102 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:40:03] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 20:40:03,292 INFO werkzeug Thread-103 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:40:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 20:40:03,447 INFO werkzeug Thread-104 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:40:03] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 20:41:24,630 INFO werkzeug Thread-106 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:41:24] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 20:41:24,729 INFO werkzeug Thread-105 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:41:24] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 20:41:24,884 INFO werkzeug Thread-107 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:41:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 20:41:24,991 INFO werkzeug Thread-108 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:41:24] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 20:41:35,369 INFO werkzeug Thread-109 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:41:35] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 20:41:35,441 INFO werkzeug Thread-110 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:41:35] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 20:41:35,587 INFO werkzeug Thread-111 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:41:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 20:41:35,684 INFO werkzeug Thread-112 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:41:35] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 20:49:11,521 INFO werkzeug Thread-113 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:49:11] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 20:49:11,602 INFO werkzeug Thread-114 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:49:11] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 20:49:11,741 INFO werkzeug Thread-115 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:49:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 20:49:11,876 INFO werkzeug Thread-116 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:49:11] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 20:49:46,369 INFO werkzeug Thread-117 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:49:46] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 20:49:46,453 INFO werkzeug Thread-118 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:49:46] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 20:49:46,646 INFO werkzeug Thread-119 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:49:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 20:49:46,760 INFO werkzeug Thread-120 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:49:46] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 20:49:57,987 INFO werkzeug Thread-121 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:49:57] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 20:49:58,073 INFO werkzeug Thread-122 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:49:58] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 20:49:58,260 INFO werkzeug Thread-123 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:49:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 20:49:58,368 INFO werkzeug Thread-124 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:49:58] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 20:50:30,960 INFO werkzeug Thread-125 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:50:30] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 20:50:31,042 INFO werkzeug Thread-126 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:50:31] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 20:50:31,219 INFO werkzeug Thread-127 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:50:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 20:50:31,374 INFO werkzeug Thread-128 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:50:31] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 20:50:50,693 INFO werkzeug Thread-129 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:50:50] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 20:50:50,772 INFO werkzeug Thread-130 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:50:50] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 20:50:50,955 INFO werkzeug Thread-131 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:50:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 20:50:51,075 INFO werkzeug Thread-132 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:50:51] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 20:50:57,536 INFO werkzeug Thread-133 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:50:57] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 20:50:57,618 INFO werkzeug Thread-134 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:50:57] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 20:50:57,742 INFO werkzeug Thread-135 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:50:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 20:50:57,850 INFO werkzeug Thread-136 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:50:57] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 20:51:05,793 INFO werkzeug Thread-137 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:51:05] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 20:51:05,888 INFO werkzeug Thread-138 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:51:05] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 20:51:06,034 INFO werkzeug Thread-139 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:51:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 20:51:06,162 INFO werkzeug Thread-140 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 20:51:06] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:07:51,190 INFO werkzeug Thread-141 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:07:51] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:07:51,266 INFO werkzeug Thread-142 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:07:51] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:07:51,436 INFO werkzeug Thread-143 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:07:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:07:51,520 INFO werkzeug Thread-144 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:07:51] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:08:15,149 INFO werkzeug Thread-145 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:08:15] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:08:15,225 INFO werkzeug Thread-146 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:08:15] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:08:15,387 INFO werkzeug Thread-147 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:08:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:08:15,560 INFO werkzeug Thread-148 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:08:15] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:08:24,466 INFO werkzeug Thread-149 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:08:24] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:08:24,557 INFO werkzeug Thread-150 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:08:24] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:08:24,808 INFO werkzeug Thread-151 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:08:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:08:24,997 INFO werkzeug Thread-152 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:08:24] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:08:36,876 INFO werkzeug Thread-153 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:08:36] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:08:36,941 INFO werkzeug Thread-154 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:08:36] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:08:37,095 INFO werkzeug Thread-155 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:08:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:08:37,226 INFO werkzeug Thread-156 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:08:37] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:09:07,902 INFO werkzeug Thread-157 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:09:07] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:09:07,988 INFO werkzeug Thread-158 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:09:07] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:09:08,199 INFO werkzeug Thread-159 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:09:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:09:08,379 INFO werkzeug Thread-160 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:09:08] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:09:59,865 INFO werkzeug Thread-161 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:09:59] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:09:59,965 INFO werkzeug Thread-162 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:09:59] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:10:00,149 INFO werkzeug Thread-163 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:10:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:10:00,339 INFO werkzeug Thread-164 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:10:00] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:10:14,269 INFO werkzeug Thread-165 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:10:14] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:10:14,354 INFO werkzeug Thread-166 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:10:14] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:10:14,519 INFO werkzeug Thread-167 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:10:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:10:14,662 INFO werkzeug Thread-168 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:10:14] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:10:43,303 INFO werkzeug Thread-169 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:10:43] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:10:43,331 INFO werkzeug Thread-170 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:10:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:10:44,273 INFO werkzeug Thread-171 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:10:44] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:11:05,117 INFO werkzeug Thread-173 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:11:05] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:11:05,213 INFO werkzeug Thread-172 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:11:05] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:11:05,426 INFO werkzeug Thread-174 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:11:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:11:05,629 INFO werkzeug Thread-175 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:11:05] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:11:05,680 INFO werkzeug Thread-176 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:11:05] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:11:13,577 INFO werkzeug Thread-177 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:11:13] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:11:13,657 INFO werkzeug Thread-178 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:11:13] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:11:13,843 INFO werkzeug Thread-179 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:11:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:11:14,006 INFO werkzeug Thread-180 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:11:14] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:11:14,062 INFO werkzeug Thread-181 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:11:14] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:11:19,606 INFO werkzeug Thread-182 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:11:19] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:11:19,698 INFO werkzeug Thread-183 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:11:19] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:11:19,867 INFO werkzeug Thread-184 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:11:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:11:20,005 INFO werkzeug Thread-185 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:11:20] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:11:20,055 INFO werkzeug Thread-186 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:11:20] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:11:34,171 INFO werkzeug Thread-187 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:11:34] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:11:34,256 INFO werkzeug Thread-188 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:11:34] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:11:34,450 INFO werkzeug Thread-189 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:11:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:11:34,624 INFO werkzeug Thread-190 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:11:34] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:11:34,675 INFO werkzeug Thread-191 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:11:34] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:40:41,681 INFO werkzeug Thread-192 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:40:41] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:40:41,802 INFO werkzeug Thread-193 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:40:41] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:40:42,019 INFO werkzeug Thread-194 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:40:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:40:42,217 INFO werkzeug Thread-195 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:40:42] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:40:42,375 INFO werkzeug Thread-196 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:40:42] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:41:30,188 INFO werkzeug Thread-197 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:41:30] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:41:30,304 INFO werkzeug Thread-198 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:41:30] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:41:30,527 INFO werkzeug Thread-199 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:41:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:41:30,653 INFO werkzeug Thread-200 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:41:30] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:41:30,779 INFO werkzeug Thread-201 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:41:30] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:41:43,687 INFO werkzeug Thread-202 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:41:43] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:41:43,771 INFO werkzeug Thread-203 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:41:43] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:41:43,954 INFO werkzeug Thread-204 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:41:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:41:44,093 INFO werkzeug Thread-205 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:41:44] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:41:44,246 INFO werkzeug Thread-206 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:41:44] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:41:56,427 INFO werkzeug Thread-207 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:41:56] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:41:56,518 INFO werkzeug Thread-208 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:41:56] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:41:56,667 INFO werkzeug Thread-209 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:41:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:41:56,772 INFO werkzeug Thread-210 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:41:56] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:41:56,882 INFO werkzeug Thread-211 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:41:56] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:42:09,414 INFO werkzeug Thread-212 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:42:09] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:42:09,524 INFO werkzeug Thread-213 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:42:09] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:42:09,755 INFO werkzeug Thread-214 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:42:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:42:09,899 INFO werkzeug Thread-215 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:42:09] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:42:10,036 INFO werkzeug Thread-216 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:42:10] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:45:47,403 INFO werkzeug Thread-217 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:45:47] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:45:47,512 INFO werkzeug Thread-218 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:45:47] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:45:47,710 INFO werkzeug Thread-219 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:45:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:45:47,844 INFO werkzeug Thread-220 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:45:47] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:45:47,951 INFO werkzeug Thread-221 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:45:47] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:45:56,602 INFO werkzeug Thread-222 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:45:56] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:45:56,685 INFO werkzeug Thread-223 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:45:56] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:45:56,870 INFO werkzeug Thread-224 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:45:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:45:56,967 INFO werkzeug Thread-225 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:45:56] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:45:57,081 INFO werkzeug Thread-226 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:45:57] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:46:15,936 INFO werkzeug Thread-227 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:46:15] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:46:16,036 INFO werkzeug Thread-228 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:46:16] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:46:16,201 INFO werkzeug Thread-229 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:46:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:46:16,296 INFO werkzeug Thread-230 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:46:16] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:46:16,425 INFO werkzeug Thread-231 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:46:16] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:46:50,342 INFO werkzeug Thread-232 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:46:50] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:46:50,472 INFO werkzeug Thread-233 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:46:50] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:46:50,730 INFO werkzeug Thread-234 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:46:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:46:50,828 INFO werkzeug Thread-235 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:46:50] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:46:50,979 INFO werkzeug Thread-236 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:46:50] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:47:09,114 INFO werkzeug Thread-237 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:47:09] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:47:09,224 INFO werkzeug Thread-238 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:47:09] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:47:09,409 INFO werkzeug Thread-239 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:47:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:47:09,531 INFO werkzeug Thread-240 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:47:09] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:47:09,711 INFO werkzeug Thread-241 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:47:09] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:49:38,053 INFO werkzeug Thread-242 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:49:38] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:49:38,162 INFO werkzeug Thread-243 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:49:38] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:49:38,366 INFO werkzeug Thread-244 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:49:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:49:38,493 INFO werkzeug Thread-245 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:49:38] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:49:38,613 INFO werkzeug Thread-246 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:49:38] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:49:51,182 INFO werkzeug Thread-247 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:49:51] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:49:51,277 INFO werkzeug Thread-248 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:49:51] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:49:51,441 INFO werkzeug Thread-249 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:49:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:49:51,559 INFO werkzeug Thread-250 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:49:51] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:49:51,686 INFO werkzeug Thread-251 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:49:51] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:51:38,561 INFO werkzeug Thread-252 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:51:38] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:51:38,661 INFO werkzeug Thread-253 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:51:38] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:51:38,904 INFO werkzeug Thread-254 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:51:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:51:39,035 INFO werkzeug Thread-255 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:51:39] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:51:39,170 INFO werkzeug Thread-256 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:51:39] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:52:19,053 INFO werkzeug Thread-257 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:52:19] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:52:19,150 INFO werkzeug Thread-258 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:52:19] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:52:19,390 INFO werkzeug Thread-259 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:52:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:52:19,517 INFO werkzeug Thread-260 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:52:19] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:52:19,646 INFO werkzeug Thread-261 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:52:19] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:52:35,022 INFO werkzeug Thread-262 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:52:35] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:52:35,114 INFO werkzeug Thread-263 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:52:35] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:52:35,308 INFO werkzeug Thread-264 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:52:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:52:35,425 INFO werkzeug Thread-265 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:52:35] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:52:35,576 INFO werkzeug Thread-266 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:52:35] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:52:43,875 INFO werkzeug Thread-267 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:52:43] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:52:43,964 INFO werkzeug Thread-268 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:52:43] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:52:44,168 INFO werkzeug Thread-269 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:52:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:52:44,286 INFO werkzeug Thread-270 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:52:44] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:52:44,470 INFO werkzeug Thread-271 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:52:44] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:53:56,574 INFO werkzeug Thread-272 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:53:56] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:53:56,663 INFO werkzeug Thread-273 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:53:56] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:53:56,906 INFO werkzeug Thread-274 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:53:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:53:57,056 INFO werkzeug Thread-275 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:53:57] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:53:57,198 INFO werkzeug Thread-276 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:53:57] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:54:03,902 INFO werkzeug Thread-277 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:54:03] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:54:04,003 INFO werkzeug Thread-278 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:54:04] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:54:04,183 INFO werkzeug Thread-279 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:54:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:54:04,301 INFO werkzeug Thread-280 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:54:04] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:54:04,438 INFO werkzeug Thread-281 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:54:04] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:57:10,088 INFO werkzeug Thread-282 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:10] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:57:10,206 INFO werkzeug Thread-283 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:10] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:57:10,450 INFO werkzeug Thread-284 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:57:10,612 INFO werkzeug Thread-285 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:10] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:57:10,759 INFO werkzeug Thread-286 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:10] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:57:23,488 INFO werkzeug Thread-287 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:23] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:57:23,584 INFO werkzeug Thread-288 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:23] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:57:23,776 INFO werkzeug Thread-289 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:57:23,875 INFO werkzeug Thread-290 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:23] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:57:24,023 INFO werkzeug Thread-291 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:24] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:57:41,110 INFO werkzeug Thread-292 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:41] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:57:41,223 INFO werkzeug Thread-293 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:41] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:57:41,495 INFO werkzeug Thread-294 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:57:41,624 INFO werkzeug Thread-295 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:41] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:57:41,823 INFO werkzeug Thread-296 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:41] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:57:44,300 INFO werkzeug Thread-297 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:44] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:57:44,390 INFO werkzeug Thread-298 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:44] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:57:44,582 INFO werkzeug Thread-299 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:57:44,705 INFO werkzeug Thread-300 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:44] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:57:44,943 INFO werkzeug Thread-301 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:44] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 21:57:51,090 INFO werkzeug Thread-302 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:51] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 21:57:51,216 INFO werkzeug Thread-303 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:51] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 21:57:51,403 INFO werkzeug Thread-304 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 21:57:51,501 INFO werkzeug Thread-305 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:51] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 21:57:51,592 INFO werkzeug Thread-306 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 21:57:51] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:00:19,035 INFO werkzeug Thread-307 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:19] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:00:19,137 INFO werkzeug Thread-308 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:19] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:00:19,416 INFO werkzeug Thread-309 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:00:19,542 INFO werkzeug Thread-310 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:19] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:00:19,720 INFO werkzeug Thread-311 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:19] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:00:29,099 INFO werkzeug Thread-312 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:29] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:00:29,192 INFO werkzeug Thread-313 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:29] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:00:29,394 INFO werkzeug Thread-314 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:00:29,487 INFO werkzeug Thread-315 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:29] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:00:29,641 INFO werkzeug Thread-316 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:29] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:00:43,691 INFO werkzeug Thread-317 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:43] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:00:43,785 INFO werkzeug Thread-318 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:43] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:00:43,982 INFO werkzeug Thread-319 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:00:44,086 INFO werkzeug Thread-320 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:44] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:00:44,204 INFO werkzeug Thread-321 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:44] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:00:53,346 INFO werkzeug Thread-322 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:53] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:00:53,454 INFO werkzeug Thread-323 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:53] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:00:53,690 INFO werkzeug Thread-324 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:00:53,762 INFO werkzeug Thread-325 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:53] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:00:54,013 INFO werkzeug Thread-326 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:54] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:00:59,109 INFO werkzeug Thread-327 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:59] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:00:59,210 INFO werkzeug Thread-328 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:59] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:00:59,440 INFO werkzeug Thread-329 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:00:59,504 INFO werkzeug Thread-330 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:59] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:00:59,666 INFO werkzeug Thread-331 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:00:59] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:01:05,047 INFO werkzeug Thread-332 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:01:05] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:01:05,166 INFO werkzeug Thread-333 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:01:05] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:01:05,385 INFO werkzeug Thread-334 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:01:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:01:05,427 INFO werkzeug Thread-335 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:01:05] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:01:05,726 INFO werkzeug Thread-336 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:01:05] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:01:22,844 INFO werkzeug Thread-337 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:01:22] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:01:22,938 INFO werkzeug Thread-338 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:01:22] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:01:23,171 INFO werkzeug Thread-339 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:01:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:01:23,288 INFO werkzeug Thread-340 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:01:23] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:01:23,407 INFO werkzeug Thread-341 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:01:23] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:01:35,676 INFO werkzeug Thread-342 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:01:35] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:01:35,771 INFO werkzeug Thread-343 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:01:35] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:01:35,974 INFO werkzeug Thread-344 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:01:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:01:36,032 INFO werkzeug Thread-345 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:01:36] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:01:36,182 INFO werkzeug Thread-346 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:01:36] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:03:08,234 INFO werkzeug Thread-347 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:08] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:03:08,381 INFO werkzeug Thread-349 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:08] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:03:08,632 INFO werkzeug Thread-350 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:03:08,727 INFO werkzeug Thread-351 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:08] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:03:08,880 INFO werkzeug Thread-352 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:08] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:03:14,656 INFO werkzeug Thread-353 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:14] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:03:14,751 INFO werkzeug Thread-354 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:14] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:03:14,933 INFO werkzeug Thread-355 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:03:15,036 INFO werkzeug Thread-356 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:15] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:03:15,229 INFO werkzeug Thread-357 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:15] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:03:25,071 INFO werkzeug Thread-358 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:25] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:03:25,193 INFO werkzeug Thread-359 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:25] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:03:25,360 INFO werkzeug Thread-360 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:03:25,424 INFO werkzeug Thread-361 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:25] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:03:25,551 INFO werkzeug Thread-362 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:25] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:03:31,553 INFO werkzeug Thread-363 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:31] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:03:31,651 INFO werkzeug Thread-364 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:31] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:03:31,858 INFO werkzeug Thread-365 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:03:31,911 INFO werkzeug Thread-366 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:31] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:03:32,108 INFO werkzeug Thread-367 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:32] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:03:43,773 INFO werkzeug Thread-368 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:43] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:03:43,899 INFO werkzeug Thread-369 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:43] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:03:44,149 INFO werkzeug Thread-370 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:03:44,234 INFO werkzeug Thread-371 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:44] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:03:44,425 INFO werkzeug Thread-372 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:03:44] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:04:05,646 INFO werkzeug Thread-373 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:04:05] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:04:05,741 INFO werkzeug Thread-374 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:04:05] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:04:05,946 INFO werkzeug Thread-375 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:04:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:04:06,028 INFO werkzeug Thread-376 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:04:06] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:04:06,175 INFO werkzeug Thread-377 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:04:06] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:04:11,288 INFO werkzeug Thread-378 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:04:11] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:04:11,390 INFO werkzeug Thread-379 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:04:11] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:04:11,598 INFO werkzeug Thread-380 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:04:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:04:11,635 INFO werkzeug Thread-381 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:04:11] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:04:11,731 INFO werkzeug Thread-382 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:04:11] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:04:21,094 INFO werkzeug Thread-383 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:04:21] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:04:21,180 INFO werkzeug Thread-384 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:04:21] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:04:21,415 INFO werkzeug Thread-385 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:04:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:04:21,507 INFO werkzeug Thread-386 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:04:21] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:04:21,653 INFO werkzeug Thread-387 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:04:21] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:05:03,304 INFO werkzeug Thread-388 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:05:03] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:05:03,407 INFO werkzeug Thread-389 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:05:03] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:05:03,678 INFO werkzeug Thread-390 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:05:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:05:03,750 INFO werkzeug Thread-391 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:05:03] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:05:03,917 INFO werkzeug Thread-392 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:05:03] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:05:45,197 INFO werkzeug Thread-393 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:05:45] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:05:45,301 INFO werkzeug Thread-394 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:05:45] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:05:45,551 INFO werkzeug Thread-395 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:05:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:05:45,619 INFO werkzeug Thread-396 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:05:45] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:05:45,699 INFO werkzeug Thread-397 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:05:45] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:05:55,199 INFO werkzeug Thread-398 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:05:55] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:05:55,314 INFO werkzeug Thread-399 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:05:55] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:05:55,494 INFO werkzeug Thread-400 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:05:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:05:55,559 INFO werkzeug Thread-401 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:05:55] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:05:55,729 INFO werkzeug Thread-402 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:05:55] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:06:03,522 INFO werkzeug Thread-403 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:06:03] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:06:03,611 INFO werkzeug Thread-404 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:06:03] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:06:03,820 INFO werkzeug Thread-405 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:06:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:06:03,912 INFO werkzeug Thread-406 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:06:03] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:06:04,215 INFO werkzeug Thread-407 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:06:04] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:06:11,140 INFO werkzeug Thread-408 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:06:11] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:06:11,237 INFO werkzeug Thread-409 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:06:11] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:06:11,464 INFO werkzeug Thread-410 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:06:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:06:11,520 INFO werkzeug Thread-411 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:06:11] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:06:11,741 INFO werkzeug Thread-412 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:06:11] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:06:34,430 INFO werkzeug Thread-413 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:06:34] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:06:34,566 INFO werkzeug Thread-414 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:06:34] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:06:34,879 INFO werkzeug Thread-415 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:06:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:06:34,933 INFO werkzeug Thread-416 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:06:34] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:06:35,261 INFO werkzeug Thread-417 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:06:35] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:06:41,363 INFO werkzeug Thread-418 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:06:41] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:06:41,473 INFO werkzeug Thread-419 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:06:41] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:06:41,674 INFO werkzeug Thread-420 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:06:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:06:41,751 INFO werkzeug Thread-421 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:06:41] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:06:41,944 INFO werkzeug Thread-422 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:06:41] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:07:22,692 INFO werkzeug Thread-423 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:07:22] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:07:22,812 INFO werkzeug Thread-424 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:07:22] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:07:23,080 INFO werkzeug Thread-425 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:07:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:07:23,143 INFO werkzeug Thread-426 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:07:23] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:07:23,289 INFO werkzeug Thread-427 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:07:23] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:07:37,381 INFO werkzeug Thread-428 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:07:37] "GET /profile/test HTTP/1.1" 200 -
+2022-12-29 22:07:37,494 INFO werkzeug Thread-429 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:07:37] "[36mGET /static/Bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2022-12-29 22:07:37,739 INFO werkzeug Thread-430 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:07:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2022-12-29 22:07:37,774 INFO werkzeug Thread-431 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:07:37] "[36mGET /static/Bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
+2022-12-29 22:07:37,955 INFO werkzeug Thread-432 (process_request_thread) : 127.0.0.1 - - [29/Dec/2022 22:07:37] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2022-12-29 22:13:27,170 INFO werkzeug MainThread :  * Detected change in 'D:\\IITM\\Project\\BlogLite\\application\\models.py', reloading
+2022-12-29 22:13:27,707 INFO werkzeug MainThread :  * Restarting with stat
+2022-12-29 22:13:30,061 DEBUG app MainThread : Staring Local Development.
+2022-12-29 22:13:30,095 INFO app MainThread : App setup complete
+2022-12-29 22:13:30,354 WARNING werkzeug MainThread :  * Debugger is active!
+2022-12-29 22:13:30,365 INFO werkzeug MainThread :  * Debugger PIN: 143-390-916
+2022-12-29 22:13:48,987 INFO werkzeug MainThread :  * Detected change in 'D:\\IITM\\Project\\BlogLite\\app.py', reloading
+2022-12-29 22:13:49,074 INFO werkzeug MainThread :  * Restarting with stat
+2022-12-29 22:13:50,017 DEBUG app MainThread : Staring Local Development.
+2022-12-29 22:13:50,030 INFO app MainThread : App setup complete
+2022-12-29 22:13:50,121 WARNING werkzeug MainThread :  * Debugger is active!
+2022-12-29 22:13:50,124 INFO werkzeug MainThread :  * Debugger PIN: 143-390-916
+2022-12-29 22:14:57,490 INFO werkzeug MainThread :  * Detected change in 'D:\\IITM\\Project\\BlogLite\\app.py', reloading
+2022-12-29 22:14:57,634 INFO werkzeug MainThread :  * Restarting with stat
+2022-12-29 22:14:58,435 DEBUG app MainThread : Staring Local Development.
+2022-12-29 22:14:58,449 INFO app MainThread : App setup complete
+2022-12-29 22:14:58,543 WARNING werkzeug MainThread :  * Debugger is active!
+2022-12-29 22:14:58,546 INFO werkzeug MainThread :  * Debugger PIN: 143-390-916
