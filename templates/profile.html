@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %} Profile {% endblock %}
+{% block content %}
+<div class="container">
+    <div class="card">
+        <div class="row">
+            <div class="card-body row">
+                <div class="col-2 text-center">
+                    <img class="card-title rounded-circle"
+                        src="{{url_for('static', filename='images/profile_pictures/default_profile_picture.png')}}"
+                        alt='profile picture' width='100' height='100'">
+                            <h6 class=" card-subtitle mb-2 text-muted">{{user.username}}</h6>
+                </div>
+                <div class="col-1 text-center ms-auto card-text">
+                    <p>Posts</p>
+                    <hr>
+                    <p>{{posts|length}}</p>
+                </div>
+                <div class="col-1 text-center card-text">
+                    <p>Followers</p>
+                    <hr>
+                    <p>{{no_followers}}</p>
+                </div>
+                <div class="col-1 text-center card-text">
+                    <p>Following</p>
+                    <hr>
+                    <p>{{no_following}}</p>
+                </div>
+
+                <p class="card-text">{{user.bio}}</p>
+                <a href="#" class="card-link">Edit Profile</a>
+                <a href="#" class="card-link">Change Password</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
