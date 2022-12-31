@@ -3,7 +3,9 @@
         <a class="navbar-brand" href="{{url_for('index')}}">BlogLite</a>
         <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-secondary btn-outline-none" type="submit">
+                <img src="{{url_for('static', filename='images/search_icon.ico')}}" alt="search" width="20" height="20">
+            </button>
         </form>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,15 +13,20 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{url_for('create_blog')}}">
+                        <button class="btn btn-secondary btn-outline-none">Create</button>
+                    </a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         data-bs-target="#navbar" aria-expanded="false">
-                        <img src="{{url_for('static', filename='images/profile_pictures/default_profile_picture.png')}}"
-                            alt="profile picture" class="rounded-circle" width="30" height="30">
+                        <img src="{{url_for('static', filename='images/profile_pictures/' + current_user.profile_pic)}}"
+                            alt="profile picture" class="rounded-circle" width="40" height="40">
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
                         <li>
-                            <a class="dropdown-item" href='#'>Signed in as
+                            <a class="dropdown-item" href="{{url_for('profile', username=current_user.username)}}">Signed in as
                                 <br><strong>{{current_user.username}}</strong></a>
                         </li>
                         <li>
