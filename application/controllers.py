@@ -1,14 +1,16 @@
 from flask import current_app as app
-from flask import render_template, request, redirect, url_for, flash
+from flask import render_template, request, redirect, url_for, flash, abort
 from flask_login import login_required, login_user, logout_user, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
 from application.models import User, Post, Comment, Like, Follower
 from email_validator import validate_email
 from .helpers import wrong_email_input, invalid_username
 from .database import db
-from .forms import RegisterForm, LoginForm, PostForm, CommentForm
+from .forms import RegisterForm, LoginForm, PostForm, CommentForm, EditProfileForm
 import logging
-
+from .config import LocalDevelopmentConfig
+import os
+from PIL import Image, ImageOps
 
 @app.route('/')
 @login_required
@@ -22,7 +24,7 @@ def index():
 def register():
     if current_user.is_authenticated:
         flash('You are already logged in! Please log out to register', 'info')
-        return redirect(url_for('login'))
+        return redirect(url_for('index'))
     form = RegisterForm()
     if form.validate_on_submit():
         username = form.username.data.lower()
@@ -119,3 +121,92 @@ def profile(username):
         no_followers = Follower.query.filter_by(following_id=user.id).count()
         no_following = Follower.query.filter_by(follower_id=user.id).count()
         return render_template('profile.html', user=user, posts=posts, no_followers=no_followers, no_following=no_following, followed=followed)
+    else:
+        abort(404, description='User not found')
+
+
+@app.route('/follow/<string:username>')
+@login_required
+def follow(username):
+    user = User.query.filter_by(username=username).first()
+    if user:
+        followed = Follower.query.filter_by(follower_id=current_user.id, following_id=user.id).first()
+        if not followed:
+            new_follow = Follower(follower_id=current_user.id, following_id=user.id)
+            db.session.add(new_follow)
+            db.session.commit()
+            flash('You are now following '+username, category='success')
+
+        return redirect(url_for('profile', username=username))
+    else:
+        abort(404, description='User not found')
+
+
+@app.route('/unfollow/<string:username>')
+@login_required
+def unfollow(username):
+    user = User.query.filter_by(username=username).first()
+    if user:
+        followed = Follower.query.filter_by(follower_id=current_user.id, following_id=user.id).first()
+        if followed:
+            db.session.delete(followed)
+            db.session.commit()
+            flash(f'You are no longer following <strong>{username}</strong>', category='success')
+        return redirect(url_for('profile', username=username))
+    else:
+        abort(404, description='User not found')
+
+@app.route('/edit_profile', methods=['GET', 'POST'])
+@login_required
+def edit_profile():
+    form = EditProfileForm()
+    if form.validate_on_submit():
+
+        username = form.username.data
+        email = form.email.data
+        image = form.image.data
+        username_exists = User.query.filter_by(username=username).first()
+        email_exists = User.query.filter_by(email=email).first()
+        if (username != current_user.username) and username_exists:
+            app.logger.debug(f'{username_exists} and {current_user.username}')
+            flash('Username already exists, Try another one', category='warning')
+        elif (email != current_user.email) and email_exists:
+            flash('Email already exists, Try another one', category='warning')
+        else:
+            current_user.username = username
+            current_user.email = email
+            if image:
+                image_extension = image.filename.split('.')[-1]
+                image_pil = Image.open(image)
+                image_resized = ImageOps.contain(image_pil, (720, 960))
+                image_resized.save(os.path.join(app.config['UPLOAD_FOLDER'], f'profile_pictures/{current_user.id}.{image_extension}'))
+                current_user.profile_pic = f'{current_user.id}.{image_extension}'
+            db.session.commit()
+            flash('Profile updated', category='success')
+            return redirect(url_for('profile', username=current_user.username))
+
+
+    return render_template('edit_profile.html', form=form)
+
+
+@app.route('/profile/<string:username>/followers')
+@login_required
+def followers(username):
+    user = User.query.filter_by(username=username).first()
+    if user:
+        followers = Follower.query.filter_by(following_id=user.id).all()
+        return render_template('followers.html', user=user, followers=followers)
+    else:
+        abort(404, description='User not found')
+
+@app.route('/profile/<string:username>/following')
+@login_required
+def following(username):
+    user = User.query.filter_by(username=username).first()
+    if user:
+        following = Follower.query.filter_by(follower_id=user.id).all()
+        return render_template('following.html', user=user, following=following)
+    else:
+        abort(404, description='User not found')
+
+
