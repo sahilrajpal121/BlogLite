@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %} Following List {% endblock %}
+{% block content %}
+<div class="container w-50 mt-3">
+    <ul class="list-group">
+    {% for user in users %}
+        <li class="list-group-item border-0">
+            <a href="{{url_for('profile', username=user.username)}}" class="text-decoration-none link-dark">
+                <img class="card-text rounded-circle"
+                    src="{{url_for('static', filename='images/profile_pictures/' + user.profile_pic)}}"
+                    alt='profile picture' width='40' height='40'>
+                    {{user.username}}
+            </a>
+            {% if current_user.is_following(user) %}
+                <a href="{{url_for('unfollow', username=user.username)}}" class="btn btn-light btn-outline-dark float-end col-2 btn-sm">Unfollow</a>
+            {% else %}
+                <a href="{{url_for('follow', username=user.username)}}" class="btn btn-info btn-outline-dark float-end col-2 btn-sm" style="background-color: #0095f6;">Follow</a>
+            {% endif %}
+        </li>
+    {% endfor %}
+    </ul>
+</div>
+{% endblock %}
