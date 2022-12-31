@@ -5,6 +5,11 @@ import pytz
 IST = pytz.timezone('Asia/Kolkata')
 
 
+# followers = db.Table('followers',
+#     db.Column('follower_id', db.Integer, db.ForeignKey('user.id')),
+#     db.Column('following_id', db.Integer, db.ForeignKey('user.id'))
+# )
+
 class User(db.Model, UserMixin):
     id = db.Column(db.Integer, autoincrement=True, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
@@ -12,6 +17,13 @@ class User(db.Model, UserMixin):
     email = db.Column(db.String(120), unique=True, nullable=False)
     profile_pic = db.Column(db.String(120), default='default_profile_picture.png', nullable=False)
     posts = db.relationship('Post', backref='user', lazy=True, cascade="all, delete")
+
+    # self referential many to many relationship for followers
+    # following = db.relationship('User', secondary=followers,
+    #                             primaryjoin=(followers.c.follower_id == id),
+    #                             secondaryjoin=(followers.c.following_id == id),
+    #                             backref=db.backref('followers', lazy='dynamic'), lazy='dynamic')
+
 
 
 class Post(db.Model):

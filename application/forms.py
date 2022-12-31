@@ -20,9 +20,15 @@ class PostForm(FlaskForm):
     title = StringField('Title', validators=[DataRequired()])
     content = StringField('Content', validators=[DataRequired()], widget=TextArea())
     image = FileField('Image', validators=[FileAllowed(['jpg', 'png'])])
-    submit = SubmitField('Post')
+    submit = SubmitField('Publish')
 
 
 class CommentForm(FlaskForm):
     content = StringField('Content', validators=[DataRequired()])
     submit = SubmitField('Comment')
+
+class EditProfileForm(FlaskForm):
+    username = StringField('Username', validators=[DataRequired()])
+    email = EmailField('Email', validators=[DataRequired(), Email()])
+    image = FileField('Image', validators=[FileAllowed(['jpg', 'png'])])
+    submit = SubmitField('Update')

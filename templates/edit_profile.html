@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %} Edit Profile {% endblock %}
+{% block content %}
+
+<div class="shadow p-3 mt-5 bg-body text-center rounded w-50 align-items-center offset-3">
+    <form action="edit_profile" method="post" style="text-align:center" enctype="multipart/form-data">
+        {{form.hidden_tag()}}
+        <div class="form-outline form-white mt-3">
+            {{form.username(class="form-control", value=current_user.username)}}
+        </div>
+
+        <div class="form-outline form-white mt-3">
+            {{form.email(class="form-control", value=current_user.email)}}
+        </div>
+
+        <div class="form-outline form-white mt-3">
+            {{form.image(class="form-control", value=current_user.image)}}
+        </div>
+
+        <div class="form-outline form-white mt-3">
+            {{ form.submit(class="btn btn-primary mt-3 btn-block") }}
+        </div>
+    </form>
+</div>
+
+{% endblock %}
