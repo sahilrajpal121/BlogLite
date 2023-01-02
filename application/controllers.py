@@ -2,22 +2,29 @@ from flask import current_app as app
 from flask import render_template, request, redirect, url_for, flash, abort
 from flask_login import login_required, login_user, logout_user, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
-from application.models import User, Post, Comment, Like, Follower
+from application.models import User, Post, Comment, Like
 from email_validator import validate_email
-from .helpers import wrong_email_input, invalid_username
+from .helpers import wrong_email_input, invalid_username, title_exists, resize_image, get_time
 from .database import db
-from .forms import RegisterForm, LoginForm, PostForm, CommentForm, EditProfileForm
+from .forms import RegisterForm, LoginForm, PostForm, CommentForm, EditProfileForm, SearchForm
 import logging
 from .config import LocalDevelopmentConfig
 import os
 from PIL import Image, ImageOps
+from urllib.parse import quote, unquote
 
 @app.route('/')
 @login_required
 def index():
-    # app.logger.debug('Index page accessed')
     print('index page accessed')
-    return render_template('index.html')
+    posts = Post.query.all()
+    filtered_posts = []
+    following_ids = [user.id for user in current_user.following]
+    print(following_ids)
+    for post in posts:
+        if post.author_id in following_ids:
+            filtered_posts.append(post)
+    return render_template('index.html', posts=filtered_posts, quote_func=quote)
 
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -98,15 +105,24 @@ def create_blog():
 
     form = PostForm()
     if form.validate_on_submit():
+        if title_exists(form.title.data):
+            flash('Title already exists', category='warning')
+            return redirect(url_for('create_blog'))
         title = form.title.data
         content = form.content.data
         image = form.image.data
-        print(image.filename)
-        new_post = Post(title=title, content=content, author_id=current_user.id, image=image.filename)
+        new_post = Post(title=title, content=content, author_id=current_user.id)
+        if image:
+            image_ext = image.filename.split('.')[-1]
+            image_name = f'{current_user.id}_{title}.{image_ext}'
+            image_path = os.path.join(app.config['UPLOAD_FOLDER'], f'posts/{image_name}')
+            image.save(image_path)
+            new_post.image = image_name
+
         db.session.add(new_post)
         db.session.commit()
         flash('Blog created', category='success')
-        return redirect(url_for('index'))
+        return redirect(url_for('post', post_title=quote(title), username=current_user.username))
 
     return render_template('create_blog.html', form=form)
 
@@ -116,11 +132,11 @@ def create_blog():
 def profile(username):
     user = User.query.filter_by(username=username).first()
     if user:
-        posts = Post.query.filter_by(author_id=user.id).all()
-        followed = Follower.query.filter_by(follower_id=current_user.id, following_id=user.id).first()
-        no_followers = Follower.query.filter_by(following_id=user.id).count()
-        no_following = Follower.query.filter_by(follower_id=user.id).count()
-        return render_template('profile.html', user=user, posts=posts, no_followers=no_followers, no_following=no_following, followed=followed)
+        posts = user.posts.order_by(Post.date_posted.desc()).all()
+        followed = current_user.is_following(user)
+        no_followers = user.followers.count()
+        no_following = user.following.count()
+        return render_template('profile.html', user=user, posts=posts, no_followers=no_followers, no_following=no_following, followed=followed, quote_func=quote)
     else:
         abort(404, description='User not found')
 
@@ -130,14 +146,15 @@ def profile(username):
 def follow(username):
     user = User.query.filter_by(username=username).first()
     if user:
-        followed = Follower.query.filter_by(follower_id=current_user.id, following_id=user.id).first()
-        if not followed:
-            new_follow = Follower(follower_id=current_user.id, following_id=user.id)
-            db.session.add(new_follow)
+        followed = current_user.is_following(user)
+        if user == current_user:
+            abort(405, description='You cannot follow yourself')
+        elif not followed:
+            current_user.follow(user)
             db.session.commit()
             flash('You are now following '+username, category='success')
 
-        return redirect(url_for('profile', username=username))
+        return redirect(request.referrer)
     else:
         abort(404, description='User not found')
 
@@ -147,12 +164,13 @@ def follow(username):
 def unfollow(username):
     user = User.query.filter_by(username=username).first()
     if user:
-        followed = Follower.query.filter_by(follower_id=current_user.id, following_id=user.id).first()
+
+        followed = current_user.is_following(user)
         if followed:
-            db.session.delete(followed)
+            current_user.unfollow(user)
             db.session.commit()
             flash(f'You are no longer following <strong>{username}</strong>', category='success')
-        return redirect(url_for('profile', username=username))
+        return redirect(request.referrer)
     else:
         abort(404, description='User not found')
 
@@ -179,8 +197,9 @@ def edit_profile():
                 image_extension = image.filename.split('.')[-1]
                 image_pil = Image.open(image)
                 image_resized = ImageOps.contain(image_pil, (720, 960))
-                image_resized.save(os.path.join(app.config['UPLOAD_FOLDER'], f'profile_pictures/{current_user.id}.{image_extension}'))
                 current_user.profile_pic = f'{current_user.id}.{image_extension}'
+                image_resized.save(os.path.join(app.config['UPLOAD_FOLDER'], f'profile_pictures/{current_user.profile_pic}'))
+                
             db.session.commit()
             flash('Profile updated', category='success')
             return redirect(url_for('profile', username=current_user.username))
@@ -194,8 +213,8 @@ def edit_profile():
 def followers(username):
     user = User.query.filter_by(username=username).first()
     if user:
-        followers = Follower.query.filter_by(following_id=user.id).all()
-        return render_template('followers.html', user=user, followers=followers)
+        users = user.followers.all()
+        return render_template('follow.html', user=user, users=users)
     else:
         abort(404, description='User not found')
 
@@ -204,9 +223,153 @@ def followers(username):
 def following(username):
     user = User.query.filter_by(username=username).first()
     if user:
-        following = Follower.query.filter_by(follower_id=user.id).all()
-        return render_template('following.html', user=user, following=following)
+        users = user.following.all()
+        return render_template('follow.html', user=user, users=users)
     else:
         abort(404, description='User not found')
+    
+
+@app.route('/post/<string:username>/<string:post_title>/')
+@login_required
+def post(username, post_title):
+    user = User.query.filter_by(username=username).first()
+    if not user:
+        abort(404, description='User not found')
+    
+    post_title = unquote(post_title)
+    post = Post.query.filter_by(title=post_title, author_id=user.id).first()
+    if post:
+        comments = post.comments.order_by(Comment.date_posted.desc()).all()
+        return render_template('post.html', post=post, quote_func=quote, comments=comments)
+    else:
+        abort(404, description='Post not found')
 
 
+@app.route('/post/<string:username>/<string:post_title>/like')
+@login_required
+def like_toggle(username, post_title):
+    user = User.query.filter_by(username=username).first()
+    
+    if not user:
+        abort(404, description='User not found')
+    
+    post_title = unquote(post_title)
+    post = Post.query.filter_by(title=post_title, author_id=user.id).first()
+    
+    if not post:
+        abort(404, description='Post not found')
+        
+    already_liked = Like.query.filter_by(user_id=current_user.id, post_id=post.id).first()
+    if already_liked:
+        db.session.delete(already_liked)
+        db.session.commit()
+    else:
+        new_like = Like(user_id=current_user.id, post_id=post.id)
+        db.session.add(new_like)
+        db.session.commit()
+    return redirect(request.referrer)
+
+@app.route('/post/<string:post_title>/edit', methods=['GET', 'POST'])
+@login_required
+def edit_post(post_title):
+    post_title = unquote(post_title)
+    post = Post.query.filter_by(title=post_title, author_id=current_user.id).first()
+    if post:
+        form = PostForm()
+        if form.validate_on_submit():
+            title = form.title.data
+            content = form.content.data
+            title_exists = Post.query.filter_by(title=title, author_id=current_user.id).first()
+            if (post.title != title) and title_exists:
+                flash('Title already exists, Try another one', category='warning')
+            else:
+                post.title = title
+                post.content = content
+                post.date_edited = get_time()
+                if form.image.data:
+                    image = form.image.data
+                    image_extension = image.filename.split('.')[-1]
+                    image_pil = Image.open(image)
+                    image_resized = ImageOps.contain(image_pil, (720, 960))
+                    post.image = f'{post.id}.{image_extension}'
+                    image_resized.save(os.path.join(app.config['UPLOAD_FOLDER'], f'post_pictures/{post.image}'))
+                db.session.commit()
+                flash('Post updated', category='success')
+                return redirect(url_for('post', username=current_user.username, post_title=quote(post.title)))
+        elif request.method == 'GET':
+            form.title.data = post.title
+            form.content.data = post.content
+    else:
+        abort(404, description='Post not found')
+    return render_template('edit_post.html', form=form, post=post, quote_func=quote)
+
+@app.context_processor
+def base_comment():
+    form = CommentForm()
+    return dict(form=form)
+
+@app.route('/post/<string:username>/<string:post_title>/comment', methods=['POST'])
+@login_required
+def comment(username, post_title):
+    user = User.query.filter_by(username=username).first()
+    if not user:
+        abort(404, description='User not found')
+    
+    post_title = unquote(post_title)
+    post = Post.query.filter_by(title=post_title, author_id=user.id).first()
+    
+    if not post:
+        abort(404, description='Post not found')
+    
+    form = CommentForm()
+    if form.validate_on_submit():
+        new_comment = Comment(content=form.comment.data, author_id=current_user.id, post_id=post.id, date_posted=get_time())
+        db.session.add(new_comment)
+        db.session.commit()
+        flash('Comment added', category='success')
+    else:
+        flash('Comment field is empty', category='warning')
+    return redirect(url_for('post', username=user.username, post_title=quote(post.title)))
+
+@app.context_processor
+def base():
+    form = SearchForm()
+    return dict(form=form)
+
+@app.route('/search', methods=['GET', 'POST'])
+@login_required
+def search():
+    form = SearchForm()
+    if form.validate_on_submit():
+        search_query = form.searching.data
+        users = User.query.filter(User.username.contains(search_query)).all()
+        return render_template('search_results.html', search_query=search_query, form=form, users=users)
+    else:
+        flash('Search field is empty', category='warning')
+        return redirect(url_for('index'))
+
+@app.route('/delete_comment/<int:comment_id>')
+@login_required
+def delete_comment(comment_id):
+    comment = Comment.query.filter_by(id=comment_id).first()
+    if comment:
+        db.session.delete(comment)
+        db.session.commit()
+        flash('Comment deleted', category='success')
+        return redirect(request.referrer)
+    else:
+        abort(404, description='Comment not found')
+    
+
+@app.route('/post/<string:post_title>/delete_post')
+@login_required
+def delete_post(post_title):
+    post_title = unquote(post_title)
+    post = Post.query.filter_by(title=post_title, author_id=current_user.id).first()
+    if post:
+        db.session.delete(post)
+        db.session.commit()
+        flash('Post deleted', category='success')
+        return redirect(url_for('profile', username=current_user.username))
+    else:
+        abort(404, description='Post not found')
