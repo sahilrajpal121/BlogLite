@@ -24,11 +24,15 @@ class PostForm(FlaskForm):
 
 
 class CommentForm(FlaskForm):
-    content = StringField('Content', validators=[DataRequired()])
-    submit = SubmitField('Comment')
+    comment = StringField('Comment', validators=[DataRequired()])
+    submit = SubmitField('Post')
 
 class EditProfileForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
     email = EmailField('Email', validators=[DataRequired(), Email()])
     image = FileField('Image', validators=[FileAllowed(['jpg', 'png'])])
     submit = SubmitField('Update')
+
+class SearchForm(FlaskForm):
+    searching = StringField('Searching', validators=[DataRequired()])
+    submit = SubmitField('Search')
