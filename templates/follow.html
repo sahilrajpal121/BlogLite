@@ -11,7 +11,11 @@
                     alt='profile picture' width='40' height='40'>
                     {{user.username}}
             </a>
-            {% if current_user.is_following(user) %}
+            {% if current_user.username == user.username %}
+            <a href="{{url_for('edit_profile')}}" <button class="btn btn-light btn-outline-dark float-end col-2 btn-sm">Edit
+                Profile</button>
+            </a>
+            {% elif current_user.is_following(user) %}
                 <a href="{{url_for('unfollow', username=user.username)}}" class="btn btn-light btn-outline-dark float-end col-2 btn-sm">Unfollow</a>
             {% else %}
                 <a href="{{url_for('follow', username=user.username)}}" class="btn btn-info btn-outline-dark float-end col-2 btn-sm" style="background-color: #0095f6;">Follow</a>
