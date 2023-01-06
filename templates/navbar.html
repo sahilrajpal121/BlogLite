@@ -27,14 +27,16 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
                         <li>
-                            <a class="dropdown-item" href="{{url_for('profile', username=current_user.username)}}">Signed in as
+                            <a class="dropdown-item"
+                                href="{{url_for('profile', username=current_user.username)}}">Signed in as
                                 <br><strong>{{current_user.username}}</strong></a>
                         </li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="{{url_for('profile', username=current_user.username)}}">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Posts</a></li>
+                        <li><a class="dropdown-item"
+                                href="{{url_for('profile', username=current_user.username)}}">Profile</a></li>
+                        <li><a class="dropdown-item" href="{{url_for('delete_account')}}">Delete account</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
