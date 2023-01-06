@@ -5,6 +5,7 @@ from flask_login import LoginManager
 import os
 from flask_migrate import Migrate
 import logging
+from flask_restful import Api
 
 logging.basicConfig(filename='debug.log', level=logging.DEBUG, format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
 app = None
@@ -19,6 +20,7 @@ def create_app():
       print("Staring Local Development")
       app.config.from_object(LocalDevelopmentConfig)
     db.init_app(app)
+    api = Api(app)
     migrate = Migrate(app, db)
     
     login_manager = LoginManager()
@@ -34,9 +36,9 @@ def create_app():
     
     app.app_context().push()
     app.logger.info("App setup complete")
-    return app
+    return app, api
 
-app = create_app()
+app, api = create_app()
 
 
 def create_test(user_datastore):
