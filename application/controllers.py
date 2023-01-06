@@ -17,7 +17,7 @@ from urllib.parse import quote, unquote
 @login_required
 def index():
     print('index page accessed')
-    posts = Post.query.all()
+    posts = Post.query.order_by(Post.date_posted.desc()).all()
     filtered_posts = []
     following_ids = [user.id for user in current_user.following]
     print(following_ids)
@@ -110,6 +110,7 @@ def create_blog():
             return redirect(url_for('create_blog'))
         title = form.title.data
         content = form.content.data
+        content = content.replace('\n', '<br>')
         image = form.image.data
         new_post = Post(title=title, content=content, author_id=current_user.id)
         if image:
@@ -345,8 +346,9 @@ def search():
         users = User.query.filter(User.username.contains(search_query)).all()
         return render_template('search_results.html', search_query=search_query, form=form, users=users)
     else:
-        flash('Search field is empty', category='warning')
-        return redirect(url_for('index'))
+        # flash('Search field is empty', category='warning')
+        # return redirect(url_for('index'))
+        return render_template('invalid_search.html')
 
 @app.route('/delete_comment/<int:comment_id>')
 @login_required
@@ -373,3 +375,15 @@ def delete_post(post_title):
         return redirect(url_for('profile', username=current_user.username))
     else:
         abort(404, description='Post not found')
+    
+@app.route('/delete_account')
+@login_required
+def delete_account():
+    user = User.query.filter_by(id=current_user.id).first()
+    if user:
+        db.session.delete(user)
+        db.session.commit()
+        flash('Account deleted', category='success')
+        return redirect(url_for('register'))
+    else:
+        abort(404, description='User not found')
