@@ -61,11 +61,7 @@
 <div class="container w-50 mt-3">
     <div class="card overflow-hidden" style="max-height: 20rem; min-height: 20rem;">
         <div class="card-header">
-            {% if post.date_edited %}
-            Edited {{post.date_edited.strftime('%I:%M %p - %b %d, %Y')}}
-            {% else %}
-            Created {{post.date_posted.strftime('%I:%M %p - %b %d, %Y')}}
-            {% endif %}
+            {{post.last_action()}}
             {% if current_user.username == post.user.username %}
             <div class="dropdown float-end" style="display: inline-block;">
                 <svg class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
@@ -78,16 +74,15 @@
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="{{url_for('edit_post', post_title=quote_func(post.title))}}">
                             Edit Blog</a></li>
-                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#DeletePost{{post.id}}">Delete
-                            Blog</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#DeletePost{{post.id}}" href="#">Delete Blog</a></li>
                 </ul>
 
                 <div class="modal fade" id="DeletePost{{post.id}}" tabindex="-1"
-                    aria-labelledby="DeletePostBody{{post.it}}" aria-hidden="true">
+                    aria-labelledby="DeletePostBody{{post.id}}" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="DeletePostBody{{post.it}}">Confirm?</h1>
+                                <h1 class="modal-title fs-5" id="DeletePostBody{{post.id}}">Confirm?</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>

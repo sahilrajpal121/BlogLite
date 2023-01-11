@@ -66,6 +66,12 @@ class Post(db.Model):
 
     def __repr__(self) -> str:
         return f'<Post: {self.title}>'
+    
+    def last_action(self):
+        if self.date_edited:
+            return 'Edited ' + self.date_edited.strftime('%I:%M %p - %b %d, %Y')
+        else:
+            return 'Created ' + self.date_posted.strftime('%I:%M %p - %b %d, %Y')
 
 class Comment(db.Model):
     id = db.Column(db.Integer, autoincrement=True, primary_key=True)
