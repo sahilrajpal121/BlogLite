@@ -36,17 +36,38 @@
                         </li>
                         <li><a class="dropdown-item"
                                 href="{{url_for('profile', username=current_user.username)}}">Profile</a></li>
-                        <li><a class="dropdown-item" href="{{url_for('delete_account')}}">Delete account</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#DeleteAccount" href="#">Delete
+                                account</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
                         <li><a class="dropdown-item" href="{{url_for('logout')}}">Sign out</a></li>
                     </ul>
-                </li>
 
             </ul>
+            </li>
+
+
 
         </div>
     </div>
 </nav>
+<div class="modal fade" id="DeleteAccount" tabindex="-1" aria-labelledby="DeleteAccountBody" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="DeleteAccountBody">Confirm?</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete the account?
+                <br>This cannot be undone.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a class="btn btn-danger" href="{{url_for('delete_account')}}" class="btn btn-danger">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
 <br><br><br>
