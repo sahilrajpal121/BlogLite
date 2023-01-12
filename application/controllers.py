@@ -13,6 +13,9 @@ import os
 from PIL import Image, ImageOps
 from urllib.parse import quote, unquote
 
+# passing quote function to template as a global function
+app.jinja_env.globals['quote_func'] = quote
+
 @app.route('/')
 @login_required
 def index():
@@ -124,6 +127,8 @@ def create_blog():
         db.session.commit()
         flash('Blog created', category='success')
         return redirect(url_for('post', post_title=quote(title), username=current_user.username))
+    else:
+        print(form.errors)
 
     return render_template('create_blog.html', form=form)
 
@@ -332,22 +337,14 @@ def comment(username, post_title):
         flash('Comment field is empty', category='warning')
     return redirect(url_for('post', username=user.username, post_title=quote(post.title)))
 
-@app.context_processor
-def base():
-    form = SearchForm()
-    return dict(form=form)
-
 @app.route('/search', methods=['GET', 'POST'])
 @login_required
 def search():
-    form = SearchForm()
-    if form.validate_on_submit():
-        search_query = form.searching.data
-        users = User.query.filter(User.username.contains(search_query)).all()
-        return render_template('search_results.html', search_query=search_query, form=form, users=users)
+    q = request.args.get('q')
+    if q:
+        users = User.query.filter(User.username.contains(q)).all()
+        return render_template('search_results.html', users=users)
     else:
-        # flash('Search field is empty', category='warning')
-        # return redirect(url_for('index'))
         return render_template('invalid_search.html')
 
 @app.route('/delete_comment/<int:comment_id>')
@@ -387,3 +384,26 @@ def delete_account():
         return redirect(url_for('register'))
     else:
         abort(404, description='User not found')
+
+@app.route('/export_blogs')
+@login_required
+def export_blogs():
+    if current_user.posts.all():
+        from csv import writer
+        from flask import send_file
+        with open('blogs.csv', 'w', newline='') as file:
+            csv_writer = writer(file)
+            csv_writer.writerow(['Title', 'Content', 'Date Posted', 'Date Edited', 'Likes', 'Comments'])
+            for post in current_user.posts.all():
+                csv_writer.writerow([post.title, post.content, post.date_posted, post.date_edited, post.likes.count(), post.comments.count()])
+        return send_file('blogs.csv', as_attachment=True)
+    else:
+        return 'create some posts first'
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('error.html', description=e), 404
+
+@app.errorhandler(500)
+def internal_server_error(e):
+    return render_template('error.html'), 500
