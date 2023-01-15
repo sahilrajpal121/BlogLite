@@ -12360,3 +12360,151 @@ with app.app_context(). See the documentation for more information.
 2023-01-15 21:29:07,698 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:29:07] "[36mGET /static/images/posts/1_Scikit-Learn’s%20New%20API%20Simplifies%20Data%20Preprocessing.webp HTTP/1.1[0m" 304 -
 2023-01-15 21:29:07,721 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:29:07] "[36mGET /static/images/posts/1_test%20upload%203rd%20-%20edited%20title%20and%20image%20x2.jpg HTTP/1.1[0m" 304 -
 2023-01-15 21:29:07,757 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:29:07] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:40:48,574 DEBUG app MainThread : Staring Local Development.
+2023-01-15 21:40:48,812 INFO app MainThread : App setup complete
+2023-01-15 21:40:48,958 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.41:5000
+2023-01-15 21:40:48,958 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2023-01-15 21:40:48,960 INFO werkzeug MainThread :  * Restarting with stat
+2023-01-15 21:40:49,568 DEBUG app MainThread : Staring Local Development.
+2023-01-15 21:40:49,695 INFO app MainThread : App setup complete
+2023-01-15 21:40:49,794 WARNING werkzeug MainThread :  * Debugger is active!
+2023-01-15 21:40:49,808 INFO werkzeug MainThread :  * Debugger PIN: 143-390-916
+2023-01-15 21:40:49,911 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:40:49] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-01-15 21:40:49,935 INFO app Thread-3 (process_request_thread) : Login page accessed
+2023-01-15 21:40:49,946 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:40:49] "GET /login HTTP/1.1" 200 -
+2023-01-15 21:40:50,111 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:40:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-01-15 21:40:50,393 INFO werkzeug Thread-5 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:40:50] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:40:51,010 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:40:51] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:40:55,993 INFO app Thread-7 (process_request_thread) : Login page accessed
+2023-01-15 21:40:56,000 INFO werkzeug Thread-7 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:40:56] "POST /login HTTP/1.1" 200 -
+2023-01-15 21:40:56,089 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:40:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-01-15 21:40:56,287 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:40:56] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:40:58,709 INFO app Thread-10 (process_request_thread) : Login page accessed
+2023-01-15 21:40:58,719 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:40:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-01-15 21:40:58,797 INFO werkzeug Thread-11 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:40:58] "GET / HTTP/1.1" 200 -
+2023-01-15 21:40:58,873 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:40:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-01-15 21:40:59,066 INFO werkzeug Thread-13 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:40:59] "[36mGET /static/images/search_icon.ico HTTP/1.1[0m" 304 -
+2023-01-15 21:40:59,101 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:40:59] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2023-01-15 21:40:59,124 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:40:59] "[36mGET /static/images/profile_pictures/1.jpg HTTP/1.1[0m" 304 -
+2023-01-15 21:40:59,159 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:40:59] "[36mGET /static/images/posts/1_7%20Useful%20Python%20Libraries%20You%20Should%20Use%20in%20Your%20Next%20Project.webp HTTP/1.1[0m" 304 -
+2023-01-15 21:40:59,180 INFO werkzeug Thread-17 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:40:59] "[36mGET /static/images/comment_icon_resized.png HTTP/1.1[0m" 304 -
+2023-01-15 21:40:59,202 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:40:59] "[36mGET /static/images/posts/1_Scikit-Learn’s%20New%20API%20Simplifies%20Data%20Preprocessing.webp HTTP/1.1[0m" 304 -
+2023-01-15 21:40:59,216 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:40:59] "[36mGET /static/images/posts/1_test%20upload%203rd%20-%20edited%20title%20and%20image%20x2.jpg HTTP/1.1[0m" 304 -
+2023-01-15 21:40:59,264 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:40:59] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:41:35,841 INFO werkzeug Thread-21 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:35] "GET / HTTP/1.1" 200 -
+2023-01-15 21:41:35,936 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-01-15 21:41:36,157 INFO werkzeug Thread-23 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:36] "[36mGET /static/images/search_icon.ico HTTP/1.1[0m" 304 -
+2023-01-15 21:41:36,200 INFO werkzeug Thread-24 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:36] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2023-01-15 21:41:36,229 INFO werkzeug Thread-25 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:36] "[36mGET /static/images/profile_pictures/1.jpg HTTP/1.1[0m" 304 -
+2023-01-15 21:41:36,255 INFO werkzeug Thread-26 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:36] "[36mGET /static/images/posts/1_7%20Useful%20Python%20Libraries%20You%20Should%20Use%20in%20Your%20Next%20Project.webp HTTP/1.1[0m" 304 -
+2023-01-15 21:41:36,279 INFO werkzeug Thread-27 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:36] "[36mGET /static/images/comment_icon_resized.png HTTP/1.1[0m" 304 -
+2023-01-15 21:41:36,307 INFO werkzeug Thread-28 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:36] "[36mGET /static/images/posts/1_Scikit-Learn’s%20New%20API%20Simplifies%20Data%20Preprocessing.webp HTTP/1.1[0m" 304 -
+2023-01-15 21:41:36,331 INFO werkzeug Thread-29 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:36] "[36mGET /static/images/posts/1_test%20upload%203rd%20-%20edited%20title%20and%20image%20x2.jpg HTTP/1.1[0m" 304 -
+2023-01-15 21:41:36,956 INFO werkzeug Thread-30 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:36] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:41:37,260 INFO werkzeug Thread-31 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:37] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:41:39,711 INFO werkzeug Thread-32 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:39] "GET / HTTP/1.1" 200 -
+2023-01-15 21:41:39,801 INFO werkzeug Thread-33 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-01-15 21:41:39,995 INFO werkzeug Thread-34 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:39] "[36mGET /static/images/search_icon.ico HTTP/1.1[0m" 304 -
+2023-01-15 21:41:40,010 INFO werkzeug Thread-35 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:40] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2023-01-15 21:41:40,023 INFO werkzeug Thread-36 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:40] "[36mGET /static/images/profile_pictures/1.jpg HTTP/1.1[0m" 304 -
+2023-01-15 21:41:40,040 INFO werkzeug Thread-37 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:40] "[36mGET /static/images/posts/1_7%20Useful%20Python%20Libraries%20You%20Should%20Use%20in%20Your%20Next%20Project.webp HTTP/1.1[0m" 304 -
+2023-01-15 21:41:40,056 INFO werkzeug Thread-38 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:40] "[36mGET /static/images/comment_icon_resized.png HTTP/1.1[0m" 304 -
+2023-01-15 21:41:40,076 INFO werkzeug Thread-39 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:40] "[36mGET /static/images/posts/1_Scikit-Learn’s%20New%20API%20Simplifies%20Data%20Preprocessing.webp HTTP/1.1[0m" 304 -
+2023-01-15 21:41:40,099 INFO werkzeug Thread-40 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:40] "[36mGET /static/images/posts/1_test%20upload%203rd%20-%20edited%20title%20and%20image%20x2.jpg HTTP/1.1[0m" 304 -
+2023-01-15 21:41:40,160 INFO werkzeug Thread-41 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:40] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:41:40,347 INFO werkzeug Thread-42 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:40] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:41:45,147 INFO werkzeug Thread-43 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:45] "GET / HTTP/1.1" 200 -
+2023-01-15 21:41:45,269 INFO werkzeug Thread-44 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-01-15 21:41:45,489 INFO werkzeug Thread-45 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:45] "[36mGET /static/images/search_icon.ico HTTP/1.1[0m" 304 -
+2023-01-15 21:41:45,510 INFO werkzeug Thread-46 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:45] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2023-01-15 21:41:45,526 INFO werkzeug Thread-47 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:45] "[36mGET /static/images/profile_pictures/1.jpg HTTP/1.1[0m" 304 -
+2023-01-15 21:41:45,543 INFO werkzeug Thread-48 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:45] "[36mGET /static/images/posts/1_7%20Useful%20Python%20Libraries%20You%20Should%20Use%20in%20Your%20Next%20Project.webp HTTP/1.1[0m" 304 -
+2023-01-15 21:41:45,561 INFO werkzeug Thread-49 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:45] "[36mGET /static/images/comment_icon_resized.png HTTP/1.1[0m" 304 -
+2023-01-15 21:41:45,591 INFO werkzeug Thread-50 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:45] "[36mGET /static/images/posts/1_Scikit-Learn’s%20New%20API%20Simplifies%20Data%20Preprocessing.webp HTTP/1.1[0m" 304 -
+2023-01-15 21:41:45,614 INFO werkzeug Thread-51 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:45] "[36mGET /static/images/posts/1_test%20upload%203rd%20-%20edited%20title%20and%20image%20x2.jpg HTTP/1.1[0m" 304 -
+2023-01-15 21:41:45,643 INFO werkzeug Thread-52 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:45] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:41:45,823 INFO werkzeug Thread-53 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:45] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:41:49,248 INFO werkzeug Thread-54 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:49] "GET /post/sahil/Scikit-Learn%25E2%2580%2599s%2520New%2520API%2520Simplifies%2520Data%2520Preprocessing/ HTTP/1.1" 200 -
+2023-01-15 21:41:49,338 INFO werkzeug Thread-55 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-01-15 21:41:49,548 INFO werkzeug Thread-56 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:49] "[36mGET /static/images/search_icon.ico HTTP/1.1[0m" 304 -
+2023-01-15 21:41:49,561 INFO werkzeug Thread-57 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:49] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2023-01-15 21:41:49,581 INFO werkzeug Thread-58 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:49] "[36mGET /static/images/profile_pictures/1.jpg HTTP/1.1[0m" 304 -
+2023-01-15 21:41:49,607 INFO werkzeug Thread-59 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:49] "[36mGET /static/images/posts/1_Scikit-Learn’s%20New%20API%20Simplifies%20Data%20Preprocessing.webp HTTP/1.1[0m" 304 -
+2023-01-15 21:41:49,627 INFO werkzeug Thread-60 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:49] "[36mGET /static/images/comment_icon_resized.png HTTP/1.1[0m" 304 -
+2023-01-15 21:41:49,691 INFO werkzeug Thread-61 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:41:49] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:42:19,529 INFO werkzeug Thread-62 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:42:19] "GET /post/sahil/Scikit-Learn%25E2%2580%2599s%2520New%2520API%2520Simplifies%2520Data%2520Preprocessing/ HTTP/1.1" 200 -
+2023-01-15 21:42:19,637 INFO werkzeug Thread-63 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:42:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-01-15 21:42:19,875 INFO werkzeug Thread-64 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:42:19] "[36mGET /static/images/search_icon.ico HTTP/1.1[0m" 304 -
+2023-01-15 21:42:19,898 INFO werkzeug Thread-65 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:42:19] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2023-01-15 21:42:19,917 INFO werkzeug Thread-66 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:42:19] "[36mGET /static/images/profile_pictures/1.jpg HTTP/1.1[0m" 304 -
+2023-01-15 21:42:19,938 INFO werkzeug Thread-67 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:42:19] "[36mGET /static/images/posts/1_Scikit-Learn’s%20New%20API%20Simplifies%20Data%20Preprocessing.webp HTTP/1.1[0m" 304 -
+2023-01-15 21:42:19,960 INFO werkzeug Thread-68 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:42:19] "[36mGET /static/images/comment_icon_resized.png HTTP/1.1[0m" 304 -
+2023-01-15 21:42:19,977 INFO werkzeug Thread-69 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:42:19] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:42:20,225 INFO werkzeug Thread-70 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:42:20] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:43:05,836 INFO werkzeug Thread-71 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:05] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-01-15 21:43:05,872 INFO app Thread-72 (process_request_thread) : Login page accessed
+2023-01-15 21:43:05,875 INFO werkzeug Thread-72 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:05] "GET /login HTTP/1.1" 200 -
+2023-01-15 21:43:05,981 INFO werkzeug Thread-73 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-01-15 21:43:07,971 INFO werkzeug Thread-74 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:07] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:43:12,442 INFO app Thread-75 (process_request_thread) : Login page accessed
+2023-01-15 21:43:12,453 INFO werkzeug Thread-75 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:12] "POST /login HTTP/1.1" 200 -
+2023-01-15 21:43:12,562 INFO werkzeug Thread-76 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-01-15 21:43:12,769 INFO werkzeug Thread-77 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:12] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:43:18,832 INFO app Thread-78 (process_request_thread) : Login page accessed
+2023-01-15 21:43:18,834 INFO werkzeug Thread-78 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:18] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-01-15 21:43:18,876 INFO werkzeug Thread-79 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:18] "GET / HTTP/1.1" 200 -
+2023-01-15 21:43:18,961 INFO werkzeug Thread-80 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-01-15 21:43:19,218 INFO werkzeug Thread-81 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:19] "[36mGET /static/images/search_icon.ico HTTP/1.1[0m" 304 -
+2023-01-15 21:43:19,231 INFO werkzeug Thread-82 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:19] "[36mGET /static/images/profile_pictures/1.jpg HTTP/1.1[0m" 304 -
+2023-01-15 21:43:19,249 INFO werkzeug Thread-83 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:19] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2023-01-15 21:43:19,266 INFO werkzeug Thread-84 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:19] "[36mGET /static/images/posts/2_new%20post%20with%20image.png HTTP/1.1[0m" 304 -
+2023-01-15 21:43:19,290 INFO werkzeug Thread-85 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:19] "[36mGET /static/images/comment_icon_resized.png HTTP/1.1[0m" 304 -
+2023-01-15 21:43:19,316 INFO werkzeug Thread-86 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:19] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:43:25,994 INFO werkzeug Thread-87 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:25] "GET /profile/sahil HTTP/1.1" 200 -
+2023-01-15 21:43:26,092 INFO werkzeug Thread-88 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-01-15 21:43:26,383 INFO werkzeug Thread-89 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:26] "[36mGET /static/images/search_icon.ico HTTP/1.1[0m" 304 -
+2023-01-15 21:43:26,407 INFO werkzeug Thread-90 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:26] "[36mGET /static/images/profile_pictures/1.jpg HTTP/1.1[0m" 304 -
+2023-01-15 21:43:26,439 INFO werkzeug Thread-91 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:26] "[36mGET /static/images/posts/1_7%20Useful%20Python%20Libraries%20You%20Should%20Use%20in%20Your%20Next%20Project.webp HTTP/1.1[0m" 304 -
+2023-01-15 21:43:26,460 INFO werkzeug Thread-92 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:26] "[36mGET /static/images/comment_icon_resized.png HTTP/1.1[0m" 304 -
+2023-01-15 21:43:26,476 INFO werkzeug Thread-93 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:26] "[36mGET /static/images/posts/1_Scikit-Learn’s%20New%20API%20Simplifies%20Data%20Preprocessing.webp HTTP/1.1[0m" 304 -
+2023-01-15 21:43:26,492 INFO werkzeug Thread-94 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:26] "[36mGET /static/images/posts/1_test%20upload%203rd%20-%20edited%20title%20and%20image%20x2.jpg HTTP/1.1[0m" 304 -
+2023-01-15 21:43:26,529 INFO werkzeug Thread-95 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:26] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:43:31,923 INFO werkzeug Thread-96 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:31] "[32mGET /post/Scikit-Learn%25E2%2580%2599s%2520New%2520API%2520Simplifies%2520Data%2520Preprocessing/delete_post HTTP/1.1[0m" 302 -
+2023-01-15 21:43:31,973 INFO werkzeug Thread-97 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:31] "GET /profile/sahil HTTP/1.1" 200 -
+2023-01-15 21:43:32,057 INFO werkzeug Thread-98 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-01-15 21:43:32,316 INFO werkzeug Thread-99 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:32] "[36mGET /static/images/search_icon.ico HTTP/1.1[0m" 304 -
+2023-01-15 21:43:32,348 INFO werkzeug Thread-100 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:32] "[36mGET /static/images/profile_pictures/1.jpg HTTP/1.1[0m" 304 -
+2023-01-15 21:43:32,362 INFO werkzeug Thread-101 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:32] "[36mGET /static/images/posts/1_7%20Useful%20Python%20Libraries%20You%20Should%20Use%20in%20Your%20Next%20Project.webp HTTP/1.1[0m" 304 -
+2023-01-15 21:43:32,382 INFO werkzeug Thread-102 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:32] "[36mGET /static/images/comment_icon_resized.png HTTP/1.1[0m" 304 -
+2023-01-15 21:43:32,404 INFO werkzeug Thread-103 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:32] "[36mGET /static/images/posts/1_test%20upload%203rd%20-%20edited%20title%20and%20image%20x2.jpg HTTP/1.1[0m" 304 -
+2023-01-15 21:43:32,450 INFO werkzeug Thread-104 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:32] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:43:35,490 INFO werkzeug Thread-105 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:35] "GET /change_password HTTP/1.1" 200 -
+2023-01-15 21:43:35,581 INFO werkzeug Thread-106 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-01-15 21:43:35,813 INFO werkzeug Thread-107 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:35] "[36mGET /static/images/search_icon.ico HTTP/1.1[0m" 304 -
+2023-01-15 21:43:35,825 INFO werkzeug Thread-108 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:35] "[36mGET /static/images/profile_pictures/1.jpg HTTP/1.1[0m" 304 -
+2023-01-15 21:43:35,867 INFO werkzeug Thread-109 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:35] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:43:46,825 INFO werkzeug Thread-110 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:46] "[32mPOST /change_password HTTP/1.1[0m" 302 -
+2023-01-15 21:43:46,884 INFO werkzeug Thread-111 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:46] "GET /profile/sahil HTTP/1.1" 200 -
+2023-01-15 21:43:47,014 INFO werkzeug Thread-112 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-01-15 21:43:47,219 INFO werkzeug Thread-113 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:47] "[36mGET /static/images/search_icon.ico HTTP/1.1[0m" 304 -
+2023-01-15 21:43:47,253 INFO werkzeug Thread-114 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:47] "[36mGET /static/images/profile_pictures/1.jpg HTTP/1.1[0m" 304 -
+2023-01-15 21:43:47,285 INFO werkzeug Thread-115 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:47] "[36mGET /static/images/posts/1_7%20Useful%20Python%20Libraries%20You%20Should%20Use%20in%20Your%20Next%20Project.webp HTTP/1.1[0m" 304 -
+2023-01-15 21:43:47,308 INFO werkzeug Thread-116 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:47] "[36mGET /static/images/comment_icon_resized.png HTTP/1.1[0m" 304 -
+2023-01-15 21:43:47,329 INFO werkzeug Thread-117 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:47] "[36mGET /static/images/posts/1_test%20upload%203rd%20-%20edited%20title%20and%20image%20x2.jpg HTTP/1.1[0m" 304 -
+2023-01-15 21:43:47,375 INFO werkzeug Thread-118 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:47] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:43:56,847 INFO werkzeug Thread-119 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:56] "GET / HTTP/1.1" 200 -
+2023-01-15 21:43:56,951 INFO werkzeug Thread-120 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-01-15 21:43:57,161 INFO werkzeug Thread-121 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:57] "[36mGET /static/images/search_icon.ico HTTP/1.1[0m" 304 -
+2023-01-15 21:43:57,184 INFO werkzeug Thread-122 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:57] "[36mGET /static/images/profile_pictures/1.jpg HTTP/1.1[0m" 304 -
+2023-01-15 21:43:57,204 INFO werkzeug Thread-123 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:57] "[36mGET /static/images/profile_pictures/default_profile_picture.png HTTP/1.1[0m" 304 -
+2023-01-15 21:43:57,223 INFO werkzeug Thread-124 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:57] "[36mGET /static/images/posts/2_new%20post%20with%20image.png HTTP/1.1[0m" 304 -
+2023-01-15 21:43:57,247 INFO werkzeug Thread-125 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:57] "[36mGET /static/images/comment_icon_resized.png HTTP/1.1[0m" 304 -
+2023-01-15 21:43:57,289 INFO werkzeug Thread-126 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:43:57] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2023-01-15 21:48:49,028 INFO werkzeug Thread-127 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:48:49] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-01-15 21:48:49,058 INFO app Thread-128 (process_request_thread) : Login page accessed
+2023-01-15 21:48:49,061 INFO werkzeug Thread-128 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:48:49] "GET /login HTTP/1.1" 200 -
+2023-01-15 21:48:49,181 INFO werkzeug Thread-129 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:48:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2023-01-15 21:48:49,499 INFO werkzeug Thread-130 (process_request_thread) : 127.0.0.1 - - [15/Jan/2023 21:48:49] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -

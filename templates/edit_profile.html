@@ -14,7 +14,11 @@
         </div>
 
         <div class="form-outline form-white mt-3">
-            {{form.image(class="form-control", value=current_user.image)}}
+            <img src="{{url_for('static', filename='images/profile_pictures/' + current_user.profile_pic)}}" alt="profile image" width="200" height="200">
+        </div>
+
+        <div class="form-outline form-white mt-3">
+            {{form.image(class="form-control", value=current_user.profile_pic)}}
         </div>
 
         <div class="form-outline form-white mt-3">
