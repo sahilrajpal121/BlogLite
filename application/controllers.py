@@ -79,7 +79,7 @@ def login():
         if user:
             if check_password_hash(user.password, password):
                 login_user(user, remember=True)
-                flash('logged in successful', category='success')
+                flash(f'Welcome <strong>{current_user.username}</strong>', category='success')
                 return redirect(url_for('index'))
             else:
                 flash('Wrong password', category='warning')
@@ -134,8 +134,9 @@ def create_blog():
         db.session.commit()
         flash('Blog created', category='success')
         return redirect(url_for('post', post_title=quote(title), username=current_user.username))
-    # else:
-    #     flash(form.errors, 'warning')
+    else:
+        if form.errors:
+            flash(form.errors, 'warning')
 
     return render_template('create_blog.html', form=form)
 
@@ -404,7 +405,8 @@ def export_blogs():
                 csv_writer.writerow([post.title, post.content, post.date_posted, post.date_edited, post.likes.count(), post.comments.count()])
         return send_file('blogs.csv', as_attachment=True)
     else:
-        return 'create some posts first'
+        flash('create some posts first', 'info')
+        return redirect(request.referrer)
 
 @app.errorhandler(404)
 def page_not_found(e):

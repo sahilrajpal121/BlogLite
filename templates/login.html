@@ -1,20 +1,26 @@
 {% extends "base.html" %}
 {% block title %} Login {% endblock %}
 {% block content %}
-
+<div class="container-fluid bg-dark text-light">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center">BlogLite</h1>
+        </div>
+    </div>
+</div>
 <div class="shadow p-3 mt-5 bg-body text-center rounded w-25 offset-4">
     <form method="post" action="login">
         {{form.hidden_tag()}}
         <div class="form-outline form-white mt-3">
-        {{form.username_or_email(class="form-control", placeholder='username or email')}}
+            {{form.username_or_email(class="form-control", placeholder='username or email')}}
         </div>
 
         <div class="form-outline form-white mt-3">
-        {{form.password(class="form-control", placeholder='password')}}
+            {{form.password(class="form-control", placeholder='password')}}
         </div>
 
         <div class="form-outline form-white mt-3">
-        {{ form.submit(class="btn btn-dark mt-3 btn-block") }}
+            {{ form.submit(class="btn btn-dark mt-3 btn-block") }}
         </div>
         <p class="h5 text-secondary color-light mt-3">New here?</p>
         <a class="btn btn-primary btn-block mt-2" href="{{url_for('register')}}" role="button">Sign Up</a>
