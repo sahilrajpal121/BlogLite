@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %} {{description}} {% endblock %}
+{% block content %}
+<div class="container w-50 mt-3">
+    <img src="{{url_for('static', filename='images/error.jpg')}}" alt="{{description}}" width="70%" height="70%">
+    <br><br>
+    <strong style="font-size:larger;">{{description}}</strong>
+</div>
+{% endblock %}

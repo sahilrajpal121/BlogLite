@@ -1,11 +1,14 @@
 {% extends "base.html" %}
-{% block title %} Search - {{search_query}} {% endblock %}
+{% block title %} Search - {{request.args.get('q')}} {% endblock %}
 {% block content %}
 
     
 <div class="container w-50 mt-3">
-    <p style="font-size:larger;">Search results for <strong>{{search_query}}</strong></p>
+    <p style="font-size:larger;">Search results for <strong>{{request.args.get('q')}}</strong></p>
     <ul class="list-group">
+    {% if users|length == 0 %}
+        <li class="list-group-item border-0">No users found</li>
+    {% else %}
     {% for user in users %}
         <li class="list-group-item border-0">
             <a href="{{url_for('profile', username=user.username)}}" class="text-decoration-none link-dark">
@@ -25,6 +28,7 @@
             {% endif %}
         </li>
     {% endfor %}
+    {% endif %}
     </ul>
 </div>
 {% endblock %}

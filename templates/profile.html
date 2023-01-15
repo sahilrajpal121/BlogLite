@@ -13,9 +13,11 @@
                     <h6 class=" card-subtitle mb-2 text-muted">{{user.username}}</h6>
                 </div>
                 <div class="col-2 text-center card-text" style="color: black;">
-                    <p>Posts</p>
-                    <hr>
-                    <p>{{posts|length}}</p>
+                    <a href="#posts" style="text-decoration: none; color: black;">
+                        <p>Posts</p>
+                        <hr>
+                        <p>{{posts|length}}</p>
+                    </a>
                 </div>
                 <div class="col-2 text-center card-text">
                     <a href="{{url_for('followers', username=user.username)}}"
@@ -57,8 +59,18 @@
         </div>
     </div>
 </div>
-{% for post in posts %}
+{% if not posts %}
 <div class="container w-50 mt-3">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">No posts yet!</h5>
+            <p class="card-text">This user has not posted anything yet.</p>
+        </div>
+    </div>
+</div>
+{% else %}
+{% for post in posts %}
+<div class="container w-50 mt-3" id="posts">
     <div class="card overflow-hidden" style="max-height: 20rem; min-height: 20rem;">
         <div class="card-header">
             {{post.last_action()}}
@@ -74,7 +86,8 @@
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="{{url_for('edit_post', post_title=quote_func(post.title))}}">
                             Edit Blog</a></li>
-                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#DeletePost{{post.id}}" href="#">Delete Blog</a></li>
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#DeletePost{{post.id}}"
+                            href="#">Delete Blog</a></li>
                 </ul>
 
                 <div class="modal fade" id="DeletePost{{post.id}}" tabindex="-1"
@@ -109,7 +122,7 @@
                         <h5 class="card-title">{{post.title}}</h5>
                         <p class="card-text">{{post.content|safe}}</p>
                     </div>
-                </div>  
+                </div>
                 {% if post.image %}
                 <div class="col-4 mt-5">
                     <img src="{{url_for('static', filename='images/posts/' + post.image)}}" class="stretched-link"
@@ -158,5 +171,5 @@
 
 
 {% endfor %}
-
+{% endif %}
 {% endblock %}

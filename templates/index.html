@@ -1,6 +1,18 @@
 {% extends "base.html" %}
 {% block title %} BlogLite {% endblock %}
 {% block content %}
+{% if not posts %}
+<div class="container w-50 mt-3">
+    <div class="card">
+        <div class="card-header">
+            <h5 class="card-title">No posts yet</h5>
+        </div>
+        <div class="card-body">
+            <p class="card-text">Follow some authors to get updated!</p>
+        </div>
+    </div>
+</div>
+{% else %}
 {% for post in posts %}
 <div class="container w-50 mt-3">
     <div class="card overflow-hidden" style="max-height: 20rem; min-height: 20rem;">
@@ -21,7 +33,7 @@
                         <h5 class="card-title">{{post.title}}</h5>
                         <p class="card-text">{{post.content|safe}}</p>
                     </div>
-                </div>  
+                </div>
                 {% if post.image %}
                 <div class="col-4 mt-5">
                     <img src="{{url_for('static', filename='images/posts/' + post.image)}}" class="stretched-link"
@@ -68,4 +80,5 @@
     </div>
 </div>
 {% endfor %}
+{% endif %}
 {% endblock %}

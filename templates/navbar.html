@@ -1,9 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{url_for('index')}}">BlogLite</a>
-        <form class="d-flex" role="search" method="post" action="{{url_for('search')}}">
-            {{ form.hidden_tag() }}
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="searching">
+        <form class="d-flex" role="search" method="get" action="{{url_for('search')}}">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="q">
             <button class="btn btn-secondary btn-outline-none" type="submit">
                 <img src="{{url_for('static', filename='images/search_icon.ico')}}" alt="search" width="20" height="20">
             </button>
@@ -36,7 +35,10 @@
                         </li>
                         <li><a class="dropdown-item"
                                 href="{{url_for('profile', username=current_user.username)}}">Profile</a></li>
-                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#DeleteAccount" href="#">Delete
+                        <li><a class="dropdown-item" href="{{url_for('export_blogs')}}">Export Blogs</a></li>
+                        <li><a class="dropdown-item" href="{{url_for('change_password')}}">Change Password</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#DeleteAccount"
+                                href="#">Delete
                                 account</a></li>
                         <li>
                             <hr class="dropdown-divider">
