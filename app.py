@@ -5,9 +5,9 @@ from flask_login import LoginManager
 import os
 from flask_migrate import Migrate
 import logging
-from flask_restful import Api
 
 logging.basicConfig(filename='debug.log', level=logging.DEBUG, format=f'%(asctime)s %(levelname)s %(name)s %(threadName)s : %(message)s')
+
 app = None
 
 def create_app():
@@ -20,7 +20,6 @@ def create_app():
       print("Staring Local Development")
       app.config.from_object(LocalDevelopmentConfig)
     db.init_app(app)
-    api = Api(app)
     migrate = Migrate(app, db)
     
     login_manager = LoginManager()
@@ -36,24 +35,10 @@ def create_app():
     
     app.app_context().push()
     app.logger.info("App setup complete")
-    return app, api
+    return app
 
-app, api = create_app()
+app = create_app()
 
-
-def create_test(user_datastore):
-    user_datastore.create_user(username='user1', password='password1', email='user1@mail.com')
-    user2 = User(username='user2', password='password2', email='user2@mail.com')
-    # user3 = User(username='user3')
-    # user4 = User(username='user4')
-    post1 = Post(title='post1', author_id=1)
-    post2 = Post(title='post2', author_id=2)
-    # Posts = Posts(title='post3', author_id=3)
-    # Posts = Posts(title='post4', author_id=4)
-    comment1 = Comment(content='comment1', post_id=1, author_id=1)
-    comment2 = Comment(content='comment2', post_id=2, author_id=2)
-    db.session.add_all([user2, post1, post2, comment1, comment2])
-    db.session.commit()
 
 from application.controllers import *
 
