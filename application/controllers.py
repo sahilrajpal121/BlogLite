@@ -3,12 +3,10 @@ from flask import render_template, request, redirect, url_for, flash, abort
 from flask_login import login_required, login_user, logout_user, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
 from application.models import User, Post, Comment, Like
-from email_validator import validate_email
-from .helpers import wrong_email_input, invalid_username, title_exists, resize_image, get_time
+from .helpers import invalid_username, title_exists, get_time
+from .helpers import rename_and_save_post_image
 from .database import db
-from .forms import RegisterForm, LoginForm, PostForm, CommentForm, EditProfileForm, SearchForm
-import logging
-from .config import LocalDevelopmentConfig
+from .forms import RegisterForm, LoginForm, PostForm, CommentForm, EditProfileForm, SearchForm, ChangePasswordForm
 import os
 from PIL import Image, ImageOps
 from urllib.parse import quote, unquote
@@ -19,15 +17,13 @@ app.jinja_env.globals['quote_func'] = quote
 @app.route('/')
 @login_required
 def index():
-    print('index page accessed')
     posts = Post.query.order_by(Post.date_posted.desc()).all()
     filtered_posts = []
     following_ids = [user.id for user in current_user.following]
-    print(following_ids)
     for post in posts:
         if post.author_id in following_ids:
             filtered_posts.append(post)
-    return render_template('index.html', posts=filtered_posts, quote_func=quote)
+    return render_template('index.html', posts=filtered_posts)
 
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -51,8 +47,6 @@ def register():
             flash('Username already exists', category='warning')
         elif email_exist:
             flash('Email already exists', category='warning')
-        # elif wrong_email_input(email):
-        #     pass
         elif password != password_confirm:
             flash('Passwords do not match', category='warning')
         else:
@@ -70,12 +64,11 @@ def register():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     app.logger.info('Login page accessed')
-    app.logger.debug('login page debug')
     if current_user.is_authenticated:
         flash('You are already logged in!', 'info')
         return redirect(url_for('index'))
+    
     form = LoginForm()
-     
     if request.method == 'POST':
         username_or_email = form.username_or_email.data
         password = form.password.data
@@ -94,7 +87,26 @@ def login():
             flash("Username or email doesn't exist", category='warning')
 
     return render_template('login.html', form=form)
-        
+
+@app.route('/change_password', methods=['GET', 'POST'])
+@login_required
+def change_password():
+    form = ChangePasswordForm()
+    if form.validate_on_submit():
+        old_password = form.old_password.data
+        new_password = form.new_password.data
+        confirm_password = form.confirm_password.data
+        if check_password_hash(current_user.password, old_password):
+            if new_password == confirm_password:
+                current_user.password = generate_password_hash(new_password, method='sha256')
+                db.session.commit()
+                flash('Password changed successfully', category='success')
+                return redirect(url_for('profile', username=current_user.username))
+            else:
+                flash('New passwords do not match', category='warning')
+        else:
+            flash('Wrong password', category='warning')
+    return render_template('change_password.html', form=form)
 
 @app.route('/logout')
 def logout():
@@ -104,7 +116,6 @@ def logout():
 @app.route('/create_blog', methods=['GET', 'POST'])
 @login_required
 def create_blog():
-    print('Create blog page accessed')
 
     form = PostForm()
     if form.validate_on_submit():
@@ -117,18 +128,14 @@ def create_blog():
         image = form.image.data
         new_post = Post(title=title, content=content, author_id=current_user.id)
         if image:
-            image_ext = image.filename.split('.')[-1]
-            image_name = f'{current_user.id}_{title}.{image_ext}'
-            image_path = os.path.join(app.config['UPLOAD_FOLDER'], f'posts/{image_name}')
-            image.save(image_path)
-            new_post.image = image_name
+            new_post.image = rename_and_save_post_image(image, title)
 
         db.session.add(new_post)
         db.session.commit()
         flash('Blog created', category='success')
         return redirect(url_for('post', post_title=quote(title), username=current_user.username))
-    else:
-        print(form.errors)
+    # else:
+    #     flash(form.errors, 'warning')
 
     return render_template('create_blog.html', form=form)
 
@@ -142,7 +149,7 @@ def profile(username):
         followed = current_user.is_following(user)
         no_followers = user.followers.count()
         no_following = user.following.count()
-        return render_template('profile.html', user=user, posts=posts, no_followers=no_followers, no_following=no_following, followed=followed, quote_func=quote)
+        return render_template('profile.html', user=user, posts=posts, no_followers=no_followers, no_following=no_following, followed=followed)
     else:
         abort(404, description='User not found')
 
@@ -246,7 +253,7 @@ def post(username, post_title):
     post = Post.query.filter_by(title=post_title, author_id=user.id).first()
     if post:
         comments = post.comments.order_by(Comment.date_posted.desc()).all()
-        return render_template('post.html', post=post, quote_func=quote, comments=comments)
+        return render_template('post.html', post=post, comments=comments)
     else:
         abort(404, description='Post not found')
 
@@ -285,29 +292,28 @@ def edit_post(post_title):
         if form.validate_on_submit():
             title = form.title.data
             content = form.content.data
+            image = form.image.data
             title_exists = Post.query.filter_by(title=title, author_id=current_user.id).first()
             if (post.title != title) and title_exists:
                 flash('Title already exists, Try another one', category='warning')
             else:
+                if image:
+                    post.image = rename_and_save_post_image(image, title)
                 post.title = title
                 post.content = content
                 post.date_edited = get_time()
-                if form.image.data:
-                    image = form.image.data
-                    image_extension = image.filename.split('.')[-1]
-                    image_pil = Image.open(image)
-                    image_resized = ImageOps.contain(image_pil, (720, 960))
-                    post.image = f'{post.id}.{image_extension}'
-                    image_resized.save(os.path.join(app.config['UPLOAD_FOLDER'], f'post_pictures/{post.image}'))
+
                 db.session.commit()
                 flash('Post updated', category='success')
                 return redirect(url_for('post', username=current_user.username, post_title=quote(post.title)))
         elif request.method == 'GET':
             form.title.data = post.title
             form.content.data = post.content
+        else:
+            flash(form.errors, 'warning')
     else:
         abort(404, description='Post not found')
-    return render_template('edit_post.html', form=form, post=post, quote_func=quote)
+    return render_template('edit_post.html', form=form, post=post)
 
 @app.context_processor
 def base_comment():

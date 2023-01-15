@@ -1,17 +1,10 @@
-from email_validator import validate_email, EmailNotValidError
-from flask import flash
 import re
 from PIL import Image, ImageOps
 from flask_login import current_user
 from .models import IST
 from datetime import datetime
-
-def wrong_email_input(email):
-    try:
-        validate_email(email)
-    except EmailNotValidError as e:
-        flash(e)
-        return True
+import os
+from flask import current_app as app
     
 def invalid_username(username):
     username_valid = re.match('^[a-zA-Z_\d\.]+$', username)
@@ -33,3 +26,10 @@ def title_exists(title):
 
 def get_time():
     return datetime.now(IST)
+
+def rename_and_save_post_image(image, title):
+    image_ext = image.filename.split('.')[-1]
+    image_name = f'{current_user.id}_{title}.{image_ext}'
+    image_path = os.path.join(app.config['UPLOAD_FOLDER'], f'posts/{image_name}')
+    image.save(image_path)
+    return image_name

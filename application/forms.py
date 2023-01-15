@@ -19,7 +19,7 @@ class RegisterForm(FlaskForm):
 class PostForm(FlaskForm):
     title = StringField('Title', validators=[DataRequired()])
     content = TextAreaField('Content', validators=[DataRequired()], widget=TextArea())
-    image = FileField('Image', validators=[FileAllowed(['jpg', 'png'])])
+    image = FileField('Image', validators=[FileAllowed(['jpg', 'png', 'jpeg', 'webp'])])
     submit = SubmitField('Publish')
 
 
@@ -30,9 +30,15 @@ class CommentForm(FlaskForm):
 class EditProfileForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
     email = EmailField('Email', validators=[DataRequired(), Email()])
-    image = FileField('Image', validators=[FileAllowed(['jpg', 'png'])])
+    image = FileField('Image', validators=[FileAllowed(['jpg', 'png', 'jpeg'])])
     submit = SubmitField('Update')
 
 class SearchForm(FlaskForm):
     searching = StringField('Searching', validators=[DataRequired()])
     submit = SubmitField('Search')
+
+class ChangePasswordForm(FlaskForm):
+    old_password = PasswordField('Old Password', validators=[DataRequired()])
+    new_password = PasswordField('New Password', validators=[DataRequired()])
+    confirm_password = PasswordField('Confirm Password', validators=[DataRequired()])
+    submit = SubmitField('Update')
